@@ -37,6 +37,7 @@
             <li> <%= link_to 'Abonelik Listeleme', controller: 'home', action: 'subscriberselect' %></li>
             <li> <%= link_to 'Abonelik Detay', controller: 'home', action: 'selectsubscriberdetail' %></li>
             <li> <%= link_to 'Abonelik Sil', controller: 'home', action: 'deactivatesubscriber' %></li>
+            <li> <%= link_to 'Abonelik Ücreti Değiştir', controller: 'home', action: 'subscriberchangeprice' %></li>
             </ul>
         </li>
         <li>
@@ -70,7 +71,18 @@
                 <li> <%= link_to 'Mağaza Sil', controller: 'home', action: 'marketplacedeactivesubpartner' %></li>
                 <li> <%= link_to '3D Secure ile Ödeme ', controller: 'home', action: 'marketplacesale3dsec' %></li>
                 <li> <%= link_to '3D Secure olmadan Ödeme', controller: 'home', action: 'marketplacempsale' %></li>
+                <li> <%= link_to 'Wirecard Ortak Ödeme Sayfası', controller: 'home', action: 'marketplacewdticketmpsale' %></li>
                 <li> <%= link_to 'Ödeme Onay Servisi', controller: 'home', action: 'marketplacereleasepayment' %></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false">Kart Saklama</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu6">
+            <li> <%= link_to 'Url Yöntemi ile Kart Saklama', controller: 'home', action: 'tokenizeccurl' %></li>
+            <li> <%= link_to 'Direk Kart Saklama', controller: 'home', action: 'tokenizecc' %></li>
+            
+        
+
             </ul>
         </li>
         <li>

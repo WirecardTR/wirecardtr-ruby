@@ -11,6 +11,7 @@ class Marketplaceaddorupdaterequest
     attr_accessor :UniqueId
     attr_accessor :SubPartnerType
     attr_accessor :Name
+    attr_accessor :BranchName
     attr_accessor :Contactinfo
     attr_accessor :Financialinfo
     attr_accessor :SubPartnerId
@@ -32,7 +33,7 @@ class Marketplaceaddorupdaterequest
        end
      end
      def to_xml_addsubpartner(req)
-        xml_string= "<?xml version='1.0' encoding='UTF-8' ?>
+        xml_string= "<?xml version='1.0' encoding='ISO-8859-9' ?>
         <WIRECARD>
         <ServiceType>"+req.ServiceType+"</ServiceType>
         <OperationType>"+req.OperationType+"</OperationType>
@@ -43,12 +44,15 @@ class Marketplaceaddorupdaterequest
         <UniqueId>"+req.UniqueId+"</UniqueId>
         <SubPartnerType>"+req.SubPartnerType+"</SubPartnerType>
         <Name>"+req.Name+"</Name>
+        <BranchName>"+req.BranchName+"</BranchName>
         <ContactInfo>
             <Country>"+req.Contactinfo.Country+"</Country>
             <City>"+req.Contactinfo.City+"</City>
             <Address>"+req.Contactinfo.Address+"</Address>
             <BusinessPhone>"+req.Contactinfo.BusinessPhone+"</BusinessPhone>
             <MobilePhone>"+req.Contactinfo.MobilePhone+"</MobilePhone>
+            <Email>"+req.Contactinfo.Email+"</Email>
+            <InvoiceEmail>"+req.Contactinfo.InvoiceEmail+"</InvoiceEmail>
         </ContactInfo>
         <FinancialInfo>
             <IdentityNumber>"+req.Financialinfo.IdentityNumber+"</IdentityNumber>
@@ -56,7 +60,6 @@ class Marketplaceaddorupdaterequest
             <TaxNumber>"+req.Financialinfo.TaxNumber+"</TaxNumber>
             <BankName>"+req.Financialinfo.BankName+"</BankName>
             <IBAN>"+req.Financialinfo.IBAN+"</IBAN>
-            <AccountName>"+req.Financialinfo.AccountName+"</AccountName>
 	    </FinancialInfo>
         </WIRECARD>"
         p xml_string
@@ -75,12 +78,15 @@ class Marketplaceaddorupdaterequest
         <SubPartnerId>"+req.SubPartnerId+"</SubPartnerId>
         <SubPartnerType>"+req.SubPartnerType+"</SubPartnerType>
         <Name>"+req.Name+"</Name>
+        <BranchName>"+req.BranchName+"</BranchName>
         <ContactInfo>
             <Country>"+req.Contactinfo.Country+"</Country>
             <City>"+req.Contactinfo.City+"</City>
             <Address>"+req.Contactinfo.Address+"</Address>
             <BusinessPhone>"+req.Contactinfo.BusinessPhone+"</BusinessPhone>
             <MobilePhone>"+req.Contactinfo.MobilePhone+"</MobilePhone>
+            <Email>"+req.Contactinfo.Email+"</Email>
+            <InvoiceEmail>"+req.Contactinfo.InvoiceEmail+"</InvoiceEmail>
         </ContactInfo>
         <FinancialInfo>
             <IdentityNumber>"+req.Financialinfo.IdentityNumber+"</IdentityNumber>
@@ -88,7 +94,6 @@ class Marketplaceaddorupdaterequest
             <TaxNumber>"+req.Financialinfo.TaxNumber+"</TaxNumber>
             <BankName>"+req.Financialinfo.BankName+"</BankName>
             <IBAN>"+req.Financialinfo.IBAN+"</IBAN>
-            <AccountName>"+req.Financialinfo.AccountName+"</AccountName>
 	    </FinancialInfo>
         </WIRECARD>"
         p xml_string
@@ -103,7 +108,7 @@ class Financialinfo
     attr_accessor :TaxNumber
     attr_accessor :BankName
     attr_accessor :IBAN
-    attr_accessor :AccountName
+
 end
 
 class Contactinfo
@@ -112,4 +117,6 @@ class Contactinfo
     attr_accessor :Address
     attr_accessor :BusinessPhone
     attr_accessor :MobilePhone
+    attr_accessor :Email
+    attr_accessor :InvoiceEmail
 end

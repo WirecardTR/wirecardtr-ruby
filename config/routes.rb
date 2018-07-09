@@ -8,11 +8,13 @@ Rails.application.routes.draw do
   get 'home/informationsmsservice'
 
   get 'home/selectsubscriberdetail'
+  get 'home/subscriberchangeprice'
   get 'home/deactivatesubscriber'
   get 'home/ccproxysaleform'
   get 'home/ccproxysale3dform'
   get 'home/wdticketsale3durlproxy'
   get 'home/wdticketsaleurlproxy'
+  get 'home/marketplacewdticketmpsale'
   get 'home/marketplaceaddsubpartner'
   get 'home/marketplaceupdatesubpartner'
   get 'home/marketplacesale3dsec'
@@ -20,6 +22,8 @@ Rails.application.routes.draw do
   get 'home/marketplacereleasepayment'
   get 'home/transactionrequestorder'
   get 'home/transactionrequestbympay'
+  get 'home/tokenizeccurl'
+  get 'home/tokenizecc'
   get 'home/success'
   get 'home/fail'
 
@@ -28,6 +32,7 @@ Rails.application.routes.draw do
   post 'home/proapi'  
   post 'home/apiplus'  
   post 'home/subscriberselect'  
+  post 'home/subscriberchangeprice'
   post 'home/selectsubscriberdetail'  
   post 'home/deactivatesubscriber'  
   post 'home/ccproxysaleform'
@@ -39,12 +44,18 @@ Rails.application.routes.draw do
   post 'home/marketplacedeactivesubpartner'
   post 'home/marketplacesale3dsec'
   post 'home/marketplacempsale'
+  post 'home/marketplacewdticketmpsale'
   post 'home/marketplacereleasepayment'
   post 'home/informationsmsservice'
 
   post 'home/transactionrequestorder'
   post 'home/transactionrequestbympay'
-
+  post 'home/tokenizeccurl'
+  post 'home/tokenizecc'
+  post 'home/success'
+  post 'home/fail'
+  post 'home/tokenizesuccess'
+  post 'home/tokenizefail'
 
   
   root 'home#index'

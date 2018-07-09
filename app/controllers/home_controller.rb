@@ -166,6 +166,29 @@ end
       end
 
     end
+    def subscriberchangeprice
+      if request.post?
+        date = Date.today
+        tomorrow = date + 1
+        validFrom=tomorrow.strftime("%Y%m%d")
+        req= Subscriberchangeprice.new
+        req.ServiceType = "SubscriberManagementService"
+        req.OperationType = "ChangePriceBySubscriber"
+        req.Description = "Odeme Degistirme"
+        req.Price=params[:price] 
+        req.SubscriberId=params[:subscriberId] 
+        req.ValidFrom=validFrom
+        #region Token
+        req.Token = Token.new
+        req.Token.UserCode = @@settings.UserCode
+        req.Token.Pin = @@settings.Pin 
+        #endregion
+      
+        @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
+      
+      else
+      end
+    end  
 
 
     # selectsubscriberdetail Action'ı temsil etmektedir.
@@ -390,6 +413,7 @@ end
           req.SubPartnerType=params[:subPartnerType]  
           req.UniqueId = SecureRandom.uuid
           req.Name = params[:name];
+          req.BranchName = params[:name];
           #region Token
           req.Token = Token.new
           req.Token.UserCode=@@settings.UserCode
@@ -402,6 +426,8 @@ end
           req.Contactinfo.Address = "Gayrettepe Mh. Yıldız Posta Cd. D Plaza No:52 K:6 34349 Beşiktaş / İstanbul"
           req.Contactinfo.MobilePhone =params[:mobilePhoneNumber] 
           req.Contactinfo.BusinessPhone = "2121111111"
+          req.Contactinfo.Email = params[:emailAddress] 
+          req.Contactinfo.InvoiceEmail  =params[:invoiceMailAddress] 
           #endregion
           #region Financialinfo Bilgileri
           req.Financialinfo = Financialinfo.new
@@ -410,7 +436,6 @@ end
           req.Financialinfo.TaxNumber = "11111111111"
           req.Financialinfo.BankName = "0012"
           req.Financialinfo.IBAN = "TR330006100519786457841326"
-          req.Financialinfo.AccountName = "Ahmet Yılmaz"
           @returnData= req.executeAddSubPartner(req,@@settings) # xml servis çağrısının başladığı kısım
         else
       end
@@ -424,6 +449,7 @@ end
         req.OperationType = "UpdateSubPartner"
         req.UniqueId = SecureRandom.uuid
         req.Name = params[:name];
+        req.BranchName = params[:name];
         req.SubPartnerType=params[:subPartnerType]  
         req.SubPartnerId = params[:subPartnerId];
         #region Token
@@ -438,6 +464,8 @@ end
         req.Contactinfo.Address = "Gayrettepe Mh. Yıldız Posta Cd. D Plaza No:52 K:6 34349 Beşiktaş / İstanbul"
         req.Contactinfo.MobilePhone =params[:mobilePhoneNumber] 
         req.Contactinfo.BusinessPhone = "2121111111"
+        req.Contactinfo.Email = params[:emailAddress] 
+        req.Contactinfo.InvoiceEmail  =params[:invoiceMailAddress] 
         #endregion
         #region Financialinfo Bilgileri
         req.Financialinfo = Financialinfo.new
@@ -446,7 +474,6 @@ end
         req.Financialinfo.TaxNumber = "11111111111"
         req.Financialinfo.BankName = "0012"
         req.Financialinfo.IBAN = "TR330006100519786457841326"
-        req.Financialinfo.AccountName = "Ahmet Yılmaz"
         @returnData= req.executeUpdateSubPartner(req,@@settings) # xml servis çağrısının başladığı kısım
       else
     end
@@ -562,8 +589,79 @@ end
       end
     end
 
+    def marketplacewdticketmpsale
+      if request.post?
+        req= Marketplacewdticketmpsalerequest.new
+        req.ServiceType = "WDTicket"
+        req.OperationType = "MPSale3DSECWithUrl"
+        req.Price = "1";#0,01 TL
+        req.MPAY = "01"
+        req.Description = "Bilgisayar"
+        req.CommissionRate = "100"; #komisyon oranı 1. 100 ile çarpılıp gönderiliyor
+        req.ExtraParam = ""
+        req.PaymentContent = "BLGSYR01"
+        req.SubPartnerId = params[:subPartnerId]
+        req.ErrorURL = "http://localhost:3000/home/fail"
+        req.SuccessURL = "http://localhost:3000/home/success"
+        #region Token
+        req.Token = Token.new
+        req.Token.UserCode = @@settings.UserCode
+        req.Token.Pin = @@settings.Pin 
+        #endregion
 
+        @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
+        p @returnData
+      else
+      end
+    end  
 
+    def tokenizeccurl
+      if request.post?
+        req= Tokenizeccurlrequest.new
+        req.ServiceType = "WDTicket"
+        req.OperationType = "TokenizeCCURL"
+        req.CustomerId = params[:customerId]
+        req.ValidityPeriod = "10"
+        req.IPAddress = ""
+        req.ErrorURL = "http://localhost:3000/home/tokenizefail"
+        req.SuccessURL = "http://localhost:3000/home/tokenizesuccess"
+        #region Token
+        req.Token = Token.new
+        req.Token.UserCode = @@settings.UserCode
+        req.Token.Pin = @@settings.Pin 
+        #endregion
+
+        @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
+        p @returnData
+      else
+      end
+    end  
+    def tokenizecc
+      if request.post?
+        req= Tokenizeccrequest.new
+        req.ServiceType = "CCTokenizationService"
+        req.OperationType = "TokenizeCC"
+        req.CreditCardNumber=params[:creditCardNo]
+        req.NameSurname=params[:ownerName]
+        req.ExpiryDate=params[:expireMonth] +"/"+params[:expireYear]
+        req.CVV=params[:cvv]
+        req.CustomerId = params[:customerId]
+        req.ValidityPeriod = "10"
+        req.IPAddress = ""
+        req.Port = ""
+        
+        #region Token
+        req.Token = Token.new
+        req.Token.UserCode = @@settings.UserCode
+        req.Token.Pin = @@settings.Pin 
+        #endregion
+
+        @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
+        p @returnData
+      else
+      end
+    end
+    
     
     #marketplacereleasepayment Action'ı temsil etmektedir.
     def marketplacereleasepayment
@@ -589,11 +687,149 @@ end
     end
 
     def success
-    end
-    def fail
+      if request.post?
+        if (params != nil)
+          output = "<?xml version='1.0' encoding='UTF-8' ?>"
+          output += "<Response>"
+          if(params[:OrderId] != nil)
+            output += "<OrderId>" + params[:OrderId] + "</OrderId>"
+          end
+          if(params[:MPAY] != nil)
+            output += "<MPAY>" + params[:MPAY] + "</MPAY>"
+          end
+          if(params[:Statuscode] != nil)
+            output += "<Statuscode>" + params[:Statuscode] + "</Statuscode>"
+          end
+          if(params[:ResultCode] != nil)
+            output += "<ResultCode>" + params[:ResultCode] + "</ResultCode>"
+          end
+          if(params[:ResultMessage] != nil)
+            output += "<ResultMessage>" + params[:ResultMessage] + "</ResultMessage>"
+          end
+          if(params[:LastTransactionDate] != nil)
+            output += "<LastTransactionDate>" + params[:LastTransactionDate] + "</LastTransactionDate>"
+          end
+          if(params[:MaskedCCNo] != nil)
+            output += "<MaskedCCNo>" + params[:MaskedCCNo] + "</MaskedCCNo>"
+          end
+          if(params[:CCTokenId] != nil)
+            output += "<CCTokenId>" + params[:CCTokenId] + "</CCTokenId>"
+          end
+          if(params[:ExtraParam] != nil)
+            output += "<ExtraParam>" + params[:ExtraParam] + "</ExtraParam>"
+          end
+          output += "</Response>"
+          puts "XML OUTPUT : " + output
+        
+          @returnData = output
+        else
+          @returnData = "nil"
+        end
+      else
+      end
     end
 
-   
+    def fail
+      if request.post?
+        if (params != nil)
+          output = "<?xml version='1.0' encoding='UTF-8' ?>"
+          output += "<Response>"
+          if(params[:OrderId] != nil)
+            output += "<OrderId>" + params[:OrderId] + "</OrderId>"
+          end
+          if(params[:MPAY] != nil)
+            output += "<MPAY>" + params[:MPAY] + "</MPAY>"
+          end
+          if(params[:Statuscode] != nil)
+            output += "<Statuscode>" + params[:Statuscode] + "</Statuscode>"
+          end
+          if(params[:ResultCode] != nil)
+            output += "<ResultCode>" + params[:ResultCode] + "</ResultCode>"
+          end
+          if(params[:ResultMessage] != nil)
+            output += "<ResultMessage>" + params[:ResultMessage] + "</ResultMessage>"
+          end
+          if(params[:LastTransactionDate] != nil)
+            output += "<LastTransactionDate>" + params[:LastTransactionDate] + "</LastTransactionDate>"
+          end
+          if(params[:MaskedCCNo] != nil)
+            output += "<MaskedCCNo>" + params[:MaskedCCNo] + "</MaskedCCNo>"
+          end
+          if(params[:CCTokenId] != nil)
+            output += "<CCTokenId>" + params[:CCTokenId] + "</CCTokenId>"
+          end
+          if(params[:ExtraParam] != nil)
+            output += "<ExtraParam>" + params[:ExtraParam] + "</ExtraParam>"
+          end
+          output += "</Response>"
+          puts "XML OUTPUT : " + output
+        
+          @returnData = output
+        else
+          @returnData = "nil"
+        end
+      else
+      end
+    end
+
+    def tokenizefail
+      if request.post?
+        if (params != nil)
+          output = "<?xml version='1.0' encoding='UTF-8' ?>"
+          output += "<Response>"
+         
+         
+          if(params[:Statuscode] != nil)
+            output += "<Statuscode>" + params[:Statuscode] + "</Statuscode>"
+          end
+          if(params[:ResultCode] != nil)
+            output += "<ResultCode>" + params[:ResultCode] + "</ResultCode>"
+          end
+          if(params[:ResultMessage] != nil)
+            output += "<ResultMessage>" + params[:ResultMessage] + "</ResultMessage>"
+          end
+          output += "</Response>"
+          puts "XML OUTPUT : " + output
+        
+          @returnData = output
+        else
+          @returnData = "nil"
+        end
+      else
+      end
+    end
+
+    def tokenizesuccess
+      if request.post?
+        if (params != nil)
+          output = "<?xml version='1.0' encoding='UTF-8' ?>"
+          output += "<Response>"
+         
+          if(params[:Statuscode] != nil)
+            output += "<Statuscode>" + params[:Statuscode] + "</Statuscode>"
+          end
+          if(params[:ResultCode] != nil)
+            output += "<ResultCode>" + params[:ResultCode] + "</ResultCode>"
+          end
+          if(params[:ResultMessage] != nil)
+            output += "<ResultMessage>" + params[:ResultMessage] + "</ResultMessage>"
+          end
+          if(params[:TokenId] != nil)
+            output += "<TokenId>" + params[:TokenId] + "</TokenId>"
+          end
+          if(params[:MaskedCCNo] != nil)
+            output += "<MaskedCCNo>" + params[:MaskedCCNo] + "</MaskedCCNo>"
+          end
+          output += "</Response>"
+          puts "XML OUTPUT : " + output
+        
+          @returnData = output
+        else
+          @returnData = "nil"
+        end
+      else
+      end
+    end
 
 
 end

@@ -16311,3 +16311,1727 @@ Processing by HomeController#transactionrequestbympay as HTML
 Completed 200 OK in 405ms (Views: 35.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-06-30 11:58:19 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 1014ms (Views: 153.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-30 12:11:23 +0300
+  
+SyntaxError (D:/wirecardgithub/wirecardtr-ruby/app/controllers/home_controller.rb:406: syntax error, unexpected '='
+          req.Contactinfo.Email = =params[:emailAddress] 
+                                   ^
+D:/wirecardgithub/wirecardtr-ruby/app/controllers/home_controller.rb:407: syntax error, unexpected '='
+          req.Contactinfo.InvoiceEmail = =params[:invoiceMailAddress] 
+                                          ^):
+  
+app/controllers/home_controller.rb:406: syntax error, unexpected '='
+app/controllers/home_controller.rb:407: syntax error, unexpected '='
+Started GET "/home/marketplaceaddsubpartner" for 127.0.0.1 at 2018-06-30 12:11:25 +0300
+  
+SyntaxError (D:/wirecardgithub/wirecardtr-ruby/app/controllers/home_controller.rb:406: syntax error, unexpected '='
+          req.Contactinfo.Email = =params[:emailAddress] 
+                                   ^
+D:/wirecardgithub/wirecardtr-ruby/app/controllers/home_controller.rb:407: syntax error, unexpected '='
+          req.Contactinfo.InvoiceEmail = =params[:invoiceMailAddress] 
+                                          ^):
+  
+app/controllers/home_controller.rb:406: syntax error, unexpected '='
+app/controllers/home_controller.rb:407: syntax error, unexpected '='
+Started GET "/home/marketplaceaddsubpartner" for 127.0.0.1 at 2018-06-30 12:11:43 +0300
+Processing by HomeController#marketplaceaddsubpartner as HTML
+  Rendering home/marketplaceaddsubpartner.erb within layouts/application
+  Rendered home/marketplaceaddsubpartner.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 23.0ms)
+
+
+Started POST "/home/marketplaceaddsubpartner" for 127.0.0.1 at 2018-06-30 12:11:49 +0300
+Processing by HomeController#marketplaceaddsubpartner as HTML
+  Parameters: {"subPartnerType"=>"Individual", "name"=>"Coşkun Kurtuldu", "mobilePhoneNumber"=>"5438018814", "emailAddress"=>"coskun.kurtuldu@codevist.com", "invoiceMailAddress"=>"coskun.kurtuldu@codevist.com", "identityNumber"=>"12665672904"}
+Completed 500 Internal Server Error in 8ms
+
+
+  
+NoMethodError (undefined method `Email=' for #<Contactinfo:0x0000000f0348a0>):
+  
+app/controllers/home_controller.rb:406:in `marketplaceaddsubpartner'
+Started GET "/home/marketplaceaddsubpartner" for 127.0.0.1 at 2018-06-30 12:12:33 +0300
+Processing by HomeController#marketplaceaddsubpartner as HTML
+  Rendering home/marketplaceaddsubpartner.erb within layouts/application
+  Rendered home/marketplaceaddsubpartner.erb within layouts/application (1.0ms)
+Completed 200 OK in 38ms (Views: 24.5ms)
+
+
+Started GET "/home/marketplaceaddsubpartner" for 127.0.0.1 at 2018-06-30 12:13:02 +0300
+Processing by HomeController#marketplaceaddsubpartner as HTML
+  Rendering home/marketplaceaddsubpartner.erb within layouts/application
+  Rendered home/marketplaceaddsubpartner.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 24.1ms)
+
+
+Started POST "/home/marketplaceaddsubpartner" for 127.0.0.1 at 2018-06-30 12:13:05 +0300
+Processing by HomeController#marketplaceaddsubpartner as HTML
+  Parameters: {"subPartnerType"=>"Individual", "name"=>"asdasdasd", "mobilePhoneNumber"=>"5438018814", "emailAddress"=>"coskun.kurtuldu@codevist.com", "invoiceMailAddress"=>"coskun.kurtuldu@codevist.com", "identityNumber"=>"12665672904"}
+Completed 500 Internal Server Error in 4ms
+
+
+  
+NoMethodError (undefined method `Email=' for #<Contactinfo:0x0000000f0a0b68>):
+  
+app/controllers/home_controller.rb:406:in `marketplaceaddsubpartner'
+Started GET "/home/marketplaceaddsubpartner" for 127.0.0.1 at 2018-06-30 12:14:39 +0300
+Processing by HomeController#marketplaceaddsubpartner as HTML
+  Rendering home/marketplaceaddsubpartner.erb within layouts/application
+  Rendered home/marketplaceaddsubpartner.erb within layouts/application (0.0ms)
+Completed 200 OK in 33ms (Views: 24.3ms)
+
+
+Started POST "/home/marketplaceaddsubpartner" for 127.0.0.1 at 2018-06-30 12:14:42 +0300
+Processing by HomeController#marketplaceaddsubpartner as HTML
+  Parameters: {"subPartnerType"=>"Individual", "name"=>"Coşkun Kurtuldu", "mobilePhoneNumber"=>"5438018814", "emailAddress"=>"coskun.kurtuldu@codevist.com", "invoiceMailAddress"=>"coskun.kurtuldu@codevist.com", "identityNumber"=>"12665672904"}
+  Rendering home/marketplaceaddsubpartner.erb within layouts/application
+  Rendered home/marketplaceaddsubpartner.erb within layouts/application (1.0ms)
+Completed 200 OK in 3456ms (Views: 50.3ms)
+
+
+Started GET "/home/marketplaceupdatesubpartner" for 127.0.0.1 at 2018-06-30 12:14:54 +0300
+Processing by HomeController#marketplaceupdatesubpartner as HTML
+  Rendering home/marketplaceupdatesubpartner.erb within layouts/application
+  Rendered home/marketplaceupdatesubpartner.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 22.7ms)
+
+
+Started POST "/home/marketplaceupdatesubpartner" for 127.0.0.1 at 2018-06-30 12:14:59 +0300
+Processing by HomeController#marketplaceupdatesubpartner as HTML
+  Parameters: {"subPartnerType"=>"Individual", "name"=>"Coşkun Kurtuldu", "mobilePhoneNumber"=>"5438018814", "emailAddress"=>"coskun.kurtuldu@codevist.com", "invoiceMailAddress"=>"coskun.kurtuldu@codevist.com", "identityNumber"=>"12665672904", "subPartnerId"=>"1253"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NoMethodError (undefined method `AccountName=' for #<Financialinfo:0x0000000a9c3e70>):
+  
+app/controllers/home_controller.rb:451:in `marketplaceupdatesubpartner'
+Started GET "/home/marketplaceupdatesubpartner" for 127.0.0.1 at 2018-06-30 12:15:44 +0300
+Processing by HomeController#marketplaceupdatesubpartner as HTML
+  Rendering home/marketplaceupdatesubpartner.erb within layouts/application
+  Rendered home/marketplaceupdatesubpartner.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 20.1ms)
+
+
+Started POST "/home/marketplaceupdatesubpartner" for 127.0.0.1 at 2018-06-30 12:15:52 +0300
+Processing by HomeController#marketplaceupdatesubpartner as HTML
+  Parameters: {"subPartnerType"=>"Individual", "name"=>"Coşkun Kurtuldu", "mobilePhoneNumber"=>"5438018814", "emailAddress"=>"coskun.kurtuldu@codevist.com", "invoiceMailAddress"=>"coskun.kurtuldu@codevist.com", "identityNumber"=>"12665672904", "subPartnerId"=>"1252"}
+  Rendering home/marketplaceupdatesubpartner.erb within layouts/application
+  Rendered home/marketplaceupdatesubpartner.erb within layouts/application (1.0ms)
+Completed 200 OK in 283ms (Views: 23.1ms)
+
+
+Started GET "/home/marketplaceupdatesubpartner" for 127.0.0.1 at 2018-06-30 12:46:07 +0300
+Processing by HomeController#marketplaceupdatesubpartner as HTML
+  Rendering home/marketplaceupdatesubpartner.erb within layouts/application
+  Rendered home/marketplaceupdatesubpartner.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 36ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"marketplacewdticketmpsale", :controller=>"home"}):
+    70:                 <li> <%= link_to 'Mağaza Sil', controller: 'home', action: 'marketplacedeactivesubpartner' %></li>
+    71:                 <li> <%= link_to '3D Secure ile Ödeme ', controller: 'home', action: 'marketplacesale3dsec' %></li>
+    72:                 <li> <%= link_to '3D Secure olmadan Ödeme', controller: 'home', action: 'marketplacempsale' %></li>
+    73:                 <li> <%= link_to 'Wirecard Ortak Ödeme Sayfası', controller: 'home', action: 'marketplacewdticketmpsale' %></li>
+    74:                 <li> <%= link_to 'Ödeme Onay Servisi', controller: 'home', action: 'marketplacereleasepayment' %></li>
+    75:             </ul>
+    76:         </li>
+  
+app/views/layouts/application.html.erb:73:in `_app_views_layouts_application_html_erb___863226442_117331000'
+Started GET "/home/marketplaceupdatesubpartner" for 127.0.0.1 at 2018-06-30 12:46:28 +0300
+Processing by HomeController#marketplaceupdatesubpartner as HTML
+  Rendering home/marketplaceupdatesubpartner.erb within layouts/application
+  Rendered home/marketplaceupdatesubpartner.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 33ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"marketplacewdticketmpsale", :controller=>"home"}):
+    70:                 <li> <%= link_to 'Mağaza Sil', controller: 'home', action: 'marketplacedeactivesubpartner' %></li>
+    71:                 <li> <%= link_to '3D Secure ile Ödeme ', controller: 'home', action: 'marketplacesale3dsec' %></li>
+    72:                 <li> <%= link_to '3D Secure olmadan Ödeme', controller: 'home', action: 'marketplacempsale' %></li>
+    73:                 <li> <%= link_to 'Wirecard Ortak Ödeme Sayfası', controller: 'home', action: 'marketplacewdticketmpsale' %></li>
+    74:                 <li> <%= link_to 'Ödeme Onay Servisi', controller: 'home', action: 'marketplacereleasepayment' %></li>
+    75:             </ul>
+    76:         </li>
+  
+app/views/layouts/application.html.erb:73:in `_app_views_layouts_application_html_erb___863226442_124277920'
+Started GET "/home/marketplaceupdatesubpartner" for 127.0.0.1 at 2018-06-30 12:47:22 +0300
+Processing by HomeController#marketplaceupdatesubpartner as HTML
+  Rendering home/marketplaceupdatesubpartner.erb within layouts/application
+  Rendered home/marketplaceupdatesubpartner.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 26.2ms)
+
+
+Started GET "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-06-30 12:47:30 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+Completed 406 Not Acceptable in 299ms
+
+
+  
+ActionController::UnknownFormat (HomeController#marketplacewdticketmpsale is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-06-30 12:48:36 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 26.1ms)
+
+
+Started GET "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-06-30 12:49:32 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (0.0ms)
+Completed 200 OK in 39ms (Views: 30.1ms)
+
+
+Started POST "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-06-30 12:49:37 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Parameters: {"subPartnerId"=>"1251"}
+Completed 500 Internal Server Error in 9ms
+
+
+  
+NoMethodError (undefined method `IPAddress' for #<Marketplacewdticketmpsalerequest:0x0000000d732578>):
+  
+app/helpers/marketplacewdticketmpsalerequest.rb:40:in `to_xml'
+app/helpers/marketplacewdticketmpsalerequest.rb:20:in `execute'
+app/controllers/home_controller.rb:589:in `marketplacewdticketmpsale'
+Started GET "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-06-30 12:50:19 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (0.0ms)
+Completed 200 OK in 29ms (Views: 22.3ms)
+
+
+Started POST "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-06-30 12:50:22 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Parameters: {"subPartnerId"=>"1251"}
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 218ms (Views: 26.4ms)
+
+
+Started POST "/home/fail" for 127.0.0.1 at 2018-06-30 12:51:09 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/home/fail"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/fail" for 127.0.0.1 at 2018-06-30 12:51:39 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/fail"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-30 12:52:33 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 21.0ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-06-30 12:52:35 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 84ms (Views: 29.7ms)
+
+
+Started GET "/home/success" for 127.0.0.1 at 2018-06-30 12:52:40 +0300
+Processing by HomeController#success as HTML
+  Rendering home/success.erb within layouts/application
+  Rendered home/success.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 20.3ms)
+
+
+Started GET "/home/fail" for 127.0.0.1 at 2018-06-30 12:52:43 +0300
+Processing by HomeController#fail as HTML
+  Rendering home/fail.erb within layouts/application
+  Rendered home/fail.erb within layouts/application (0.0ms)
+Completed 200 OK in 34ms (Views: 21.7ms)
+
+
+Started POST "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-06-30 12:53:48 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Parameters: {"subPartnerId"=>"1251"}
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 186ms (Views: 23.8ms)
+
+
+Started POST "/home/success" for 127.0.0.1 at 2018-06-30 12:54:31 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/home/success"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home/success" for 127.0.0.1 at 2018-06-30 12:54:46 +0300
+Processing by HomeController#success as HTML
+  Rendering home/success.erb within layouts/application
+  Rendered home/success.erb within layouts/application (0.0ms)
+Completed 200 OK in 42ms (Views: 32.7ms)
+
+
+Started POST "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-06-30 12:55:33 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Parameters: {"subPartnerId"=>"1251"}
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (0.0ms)
+Completed 200 OK in 215ms (Views: 33.7ms)
+
+
+Started POST "/home/fail" for 127.0.0.1 at 2018-06-30 12:56:16 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/home/fail"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-06-30 12:56:42 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 23.0ms)
+
+
+Started POST "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-06-30 12:56:45 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Parameters: {"subPartnerId"=>"1251"}
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (0.0ms)
+Completed 200 OK in 233ms (Views: 36.8ms)
+
+
+Started POST "/home/fail" for 127.0.0.1 at 2018-06-30 12:57:20 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/home/fail"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home/fail" for 127.0.0.1 at 2018-06-30 12:57:27 +0300
+Processing by HomeController#fail as HTML
+  Rendering home/fail.erb within layouts/application
+  Rendered home/fail.erb within layouts/application (0.0ms)
+Completed 200 OK in 29ms (Views: 23.1ms)
+
+
+Started POST "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-06-30 12:57:43 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Parameters: {"subPartnerId"=>"1251"}
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (0.0ms)
+Completed 200 OK in 165ms (Views: 21.5ms)
+
+
+Started POST "/home/fail" for 127.0.0.1 at 2018-06-30 12:58:19 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/home/fail"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-06-30 12:58:55 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Parameters: {"subPartnerId"=>"1251"}
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (0.0ms)
+Completed 200 OK in 185ms (Views: 36.1ms)
+
+
+Started POST "/home/fail" for 127.0.0.1 at 2018-06-30 12:59:27 +0300
+Processing by HomeController#fail as HTML
+  Parameters: {"OrderId"=>"af3c0554-62da-449d-9a6b-bd375704b053", "MPAY"=>"01", "StatusCode"=>"1", "ResultCode"=>"CCPY01044", "ResultMessage"=>"Güvenlik doğrulaması başarılı bir şekilde tamamlanamadığı için işlem başarısız olarak sonuçlandırılmıştır.", "LastTransactionDate"=>"20180630125928", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>""}
+  Rendering home/fail.erb within layouts/application
+  Rendered home/fail.erb within layouts/application (1.0ms)
+Completed 200 OK in 54ms (Views: 35.8ms)
+
+
+Started GET "/MarketPlaceWdTicketMpSale3DSecure" for 127.0.0.1 at 2018-06-30 15:07:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/MarketPlaceWdTicketMpSale3DSecure"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/MarketPlaceWdTicketMpSale3DSecure" for 127.0.0.1 at 2018-06-30 15:08:11 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/MarketPlaceWdTicketMpSale3DSecure"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/MarketPlaceWdTicketMpSale3DSecure" for 127.0.0.1 at 2018-06-30 15:08:16 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/MarketPlaceWdTicketMpSale3DSecure"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/MarketPlaceWdTicketMpSale3DSecure" for 127.0.0.1 at 2018-06-30 15:08:23 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/MarketPlaceWdTicketMpSale3DSecure"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/MarketPlaceWdTicketMpSale3DSecure" for 127.0.0.1 at 2018-06-30 15:42:23 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/MarketPlaceWdTicketMpSale3DSecure"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/Fail" for 127.0.0.1 at 2018-06-30 16:49:56 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/Fail"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/MarketPlaceWdTicketMpSale3DSecure" for 127.0.0.1 at 2018-06-30 16:50:22 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/MarketPlaceWdTicketMpSale3DSecure"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/MarketPlaceWdTicketMpSale3DSecure" for 127.0.0.1 at 2018-06-30 16:50:28 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/MarketPlaceWdTicketMpSale3DSecure"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-30 16:50:30 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 37ms (Views: 30.6ms)
+
+
+Started GET "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-06-30 16:50:33 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (0.0ms)
+Completed 200 OK in 30ms (Views: 24.1ms)
+
+
+Started POST "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-06-30 16:50:35 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Parameters: {"subPartnerId"=>"1251"}
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 21.8ms)
+
+
+Started POST "/home/fail" for 127.0.0.1 at 2018-06-30 16:50:52 +0300
+Processing by HomeController#fail as HTML
+  Parameters: {"OrderId"=>"d7b2d35b-6afc-47b7-9bd5-6afa79b19c95", "MPAY"=>"01", "StatusCode"=>"1", "ResultCode"=>"CCPY01044", "ResultMessage"=>"Güvenlik doğrulaması başarılı bir şekilde tamamlanamadığı için işlem başarısız olarak sonuçlandırılmıştır.", "LastTransactionDate"=>"20180630165053", "MaskedCCNo"=>"4025 91** **** 4708", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>""}
+  Rendering home/fail.erb within layouts/application
+  Rendered home/fail.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 25.5ms)
+
+
+Started POST "/api/MarketPlaceWdTicketMpSale3DSecure" for 127.0.0.1 at 2018-06-30 16:57:47 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/api/MarketPlaceWdTicketMpSale3DSecure"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-30 16:58:03 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 33.1ms)
+
+
+Started GET "/js/scripts/vkbeautify.0.99.00.beta.js" for 127.0.0.1 at 2018-06-30 16:58:08 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts/vkbeautify.0.99.00.beta.js"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/js/scripts/vkbeautify.0.99.00.beta.js" for 127.0.0.1 at 2018-06-30 16:58:11 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts/vkbeautify.0.99.00.beta.js"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-07-03 16:31:02 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 866ms (Views: 47.6ms)
+
+
+Started GET "/home/subscriberchangeprice" for 127.0.0.1 at 2018-07-03 16:31:31 +0300
+Processing by HomeController#subscriberchangeprice as HTML
+  Rendering home/subscriberchangeprice.erb within layouts/application
+  Rendered home/subscriberchangeprice.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 28.5ms)
+
+
+Started POST "/home/subscriberchangeprice" for 127.0.0.1 at 2018-07-03 16:31:35 +0300
+Processing by HomeController#subscriberchangeprice as HTML
+  Parameters: {"subscriberId"=>"f5ff6e1a-4f21-41bd-b684-48989152fa60", "price"=>"250"}
+Completed 500 Internal Server Error in 127ms
+
+
+  
+NameError (undefined local variable or method `date' for #<HomeController:0x0000000d65d148>):
+  
+app/controllers/home_controller.rb:171:in `subscriberchangeprice'
+Started GET "/home/subscriberchangeprice" for 127.0.0.1 at 2018-07-03 16:32:21 +0300
+Processing by HomeController#subscriberchangeprice as HTML
+  Rendering home/subscriberchangeprice.erb within layouts/application
+  Rendered home/subscriberchangeprice.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 29.1ms)
+
+
+Started POST "/home/subscriberchangeprice" for 127.0.0.1 at 2018-07-03 16:32:24 +0300
+Processing by HomeController#subscriberchangeprice as HTML
+  Parameters: {"subscriberId"=>"f5ff6e1a-4f21-41bd-b684-48989152fa60", "price"=>"250"}
+Completed 500 Internal Server Error in 7ms
+
+
+  
+TypeError (no implicit conversion of Date into String):
+  
+app/controllers/home_controller.rb:179:in `parse'
+app/controllers/home_controller.rb:179:in `subscriberchangeprice'
+Started GET "/home/subscriberchangeprice" for 127.0.0.1 at 2018-07-03 16:32:57 +0300
+Processing by HomeController#subscriberchangeprice as HTML
+  Rendering home/subscriberchangeprice.erb within layouts/application
+  Rendered home/subscriberchangeprice.erb within layouts/application (1.0ms)
+Completed 200 OK in 35ms (Views: 26.5ms)
+
+
+Started POST "/home/subscriberchangeprice" for 127.0.0.1 at 2018-07-03 16:33:00 +0300
+Processing by HomeController#subscriberchangeprice as HTML
+  Parameters: {"subscriberId"=>"f5ff6e1a-4f21-41bd-b684-48989152fa60", "price"=>"250"}
+  Rendering home/subscriberchangeprice.erb within layouts/application
+  Rendered home/subscriberchangeprice.erb within layouts/application (0.5ms)
+Completed 200 OK in 251ms (Views: 23.1ms)
+
+
+Started GET "/home/subscriberchangeprice" for 127.0.0.1 at 2018-07-03 16:33:42 +0300
+Processing by HomeController#subscriberchangeprice as HTML
+  Rendering home/subscriberchangeprice.erb within layouts/application
+  Rendered home/subscriberchangeprice.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 26.1ms)
+
+
+Started POST "/home/subscriberchangeprice" for 127.0.0.1 at 2018-07-03 16:33:44 +0300
+Processing by HomeController#subscriberchangeprice as HTML
+  Parameters: {"subscriberId"=>"f5ff6e1a-4f21-41bd-b684-48989152fa60", "price"=>"250"}
+  Rendering home/subscriberchangeprice.erb within layouts/application
+  Rendered home/subscriberchangeprice.erb within layouts/application (0.5ms)
+Completed 200 OK in 252ms (Views: 22.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-03 16:41:31 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 29.2ms)
+
+
+Started GET "/home/subscriberchangeprice" for 127.0.0.1 at 2018-07-03 16:41:34 +0300
+Processing by HomeController#subscriberchangeprice as HTML
+  Rendering home/subscriberchangeprice.erb within layouts/application
+  Rendered home/subscriberchangeprice.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 22.8ms)
+
+
+Started POST "/home/subscriberchangeprice" for 127.0.0.1 at 2018-07-03 16:41:37 +0300
+Processing by HomeController#subscriberchangeprice as HTML
+  Parameters: {"subscriberId"=>"f5ff6e1a-4f21-41bd-b684-48989152fa60", "price"=>"250"}
+  Rendering home/subscriberchangeprice.erb within layouts/application
+  Rendered home/subscriberchangeprice.erb within layouts/application (1.0ms)
+Completed 200 OK in 204ms (Views: 21.7ms)
+
+
+Started GET "/home/subscriberchangeprice" for 127.0.0.1 at 2018-07-03 16:42:51 +0300
+Processing by HomeController#subscriberchangeprice as HTML
+  Rendering home/subscriberchangeprice.erb within layouts/application
+  Rendered home/subscriberchangeprice.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 26.1ms)
+
+
+Started POST "/home/subscriberchangeprice" for 127.0.0.1 at 2018-07-03 16:42:54 +0300
+Processing by HomeController#subscriberchangeprice as HTML
+  Parameters: {"subscriberId"=>"f5ff6e1a-4f21-41bd-b684-48989152fa60", "price"=>"250"}
+  Rendering home/subscriberchangeprice.erb within layouts/application
+  Rendered home/subscriberchangeprice.erb within layouts/application (1.0ms)
+Completed 200 OK in 120ms (Views: 22.1ms)
+
+
+Started GET "/home/subscriberchangeprice" for 127.0.0.1 at 2018-07-03 16:52:45 +0300
+Processing by HomeController#subscriberchangeprice as HTML
+  Rendering home/subscriberchangeprice.erb within layouts/application
+  Rendered home/subscriberchangeprice.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 23.9ms)
+
+
+Started GET "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-07-03 16:52:48 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 23.5ms)
+
+
+Started POST "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-07-03 16:52:51 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Parameters: {"subPartnerId"=>"1251"}
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 184ms (Views: 22.2ms)
+
+
+Started POST "/home/fail" for 127.0.0.1 at 2018-07-03 16:53:36 +0300
+Processing by HomeController#fail as HTML
+  Parameters: {"OrderId"=>"dfb71fc6-91a8-4892-8f95-12d61deebc05", "MPAY"=>"01", "StatusCode"=>"1", "ResultCode"=>"CCPY01043", "ResultMessage"=>"Güvenlik doğrulaması başarılı bir şekilde tamamlanamadığı için işlem başarısız olarak sonuçlandırılmıştır.", "LastTransactionDate"=>"20180703165336", "MaskedCCNo"=>"5352 17** **** 6369", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>""}
+  Rendering home/fail.erb within layouts/application
+  Rendered home/fail.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 29.6ms)
+
+
+Started GET "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-07-03 16:54:50 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 27.8ms)
+
+
+Started POST "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-07-03 16:54:52 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Parameters: {"subPartnerId"=>"1251"}
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 180ms (Views: 29.6ms)
+
+
+Started POST "/home/fail" for 127.0.0.1 at 2018-07-03 16:55:08 +0300
+Processing by HomeController#fail as HTML
+  Parameters: {"OrderId"=>"170b9c4b-31fe-47f4-89c3-66c1e8849ad9", "MPAY"=>"01", "StatusCode"=>"1", "ResultCode"=>"CCPY01043", "ResultMessage"=>"Güvenlik doğrulaması başarılı bir şekilde tamamlanamadığı için işlem başarısız olarak sonuçlandırılmıştır.", "LastTransactionDate"=>"20180703165508", "MaskedCCNo"=>"5352 17** **** 6369", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>""}
+  Rendering home/fail.erb within layouts/application
+  Rendered home/fail.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 25.7ms)
+
+
+Started GET "/home/fail" for 127.0.0.1 at 2018-07-03 16:55:24 +0300
+Processing by HomeController#fail as HTML
+  Rendering home/fail.erb within layouts/application
+  Rendered home/fail.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 20.7ms)
+
+
+Started GET "/home/subscriberchangeprice" for 127.0.0.1 at 2018-07-03 17:50:36 +0300
+Processing by HomeController#subscriberchangeprice as HTML
+  Rendering home/subscriberchangeprice.erb within layouts/application
+  Rendered home/subscriberchangeprice.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 25.6ms)
+
+
+Started POST "/home/subscriberchangeprice" for 127.0.0.1 at 2018-07-03 17:50:38 +0300
+Processing by HomeController#subscriberchangeprice as HTML
+  Parameters: {"subscriberId"=>"f5ff6e1a-4f21-41bd-b684-48989152fa60", "price"=>"250"}
+  Rendering home/subscriberchangeprice.erb within layouts/application
+  Rendered home/subscriberchangeprice.erb within layouts/application (1.0ms)
+Completed 200 OK in 131ms (Views: 23.3ms)
+
+
+Started GET "/MarketPlaceWdTicketMpSale3DSecure" for 127.0.0.1 at 2018-07-03 18:02:16 +0300
+Started POST "/api/MarketPlaceWdTicketMpSale3DSecure" for 127.0.0.1 at 2018-07-03 18:02:16 +0300
+  
+  
+ActionController::RoutingError (No route matches [GET] "/MarketPlaceWdTicketMpSale3DSecure"):
+ActionController::RoutingError (No route matches [POST] "/api/MarketPlaceWdTicketMpSale3DSecure"):
+  
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/MarketPlaceWdTicketMpSale3DSecure" for 127.0.0.1 at 2018-07-03 18:02:25 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/MarketPlaceWdTicketMpSale3DSecure"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/MarketPlaceWdTicketMpSale3DSecure" for 127.0.0.1 at 2018-07-03 18:02:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/MarketPlaceWdTicketMpSale3DSecure"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-07-03 18:02:36 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 27.9ms)
+
+
+Started GET "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-07-03 18:02:41 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 27.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-03 18:07:25 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 23.5ms)
+
+
+Started GET "/home/marketplacewdticketmpsale" for 127.0.0.1 at 2018-07-03 18:07:27 +0300
+Processing by HomeController#marketplacewdticketmpsale as HTML
+  Rendering home/marketplacewdticketmpsale.erb within layouts/application
+  Rendered home/marketplacewdticketmpsale.erb within layouts/application (0.0ms)
+Completed 200 OK in 46ms (Views: 35.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-07 16:28:02 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 796ms (Views: 43.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-07 16:28:17 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 23.5ms)
+
+
+Started GET "/home/tokenizecc" for 127.0.0.1 at 2018-07-07 16:28:19 +0300
+Processing by HomeController#tokenizecc as HTML
+  Rendering home/tokenizecc.erb within layouts/application
+  Rendered home/tokenizecc.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 22.7ms)
+
+
+Started GET "/home/tokenizecc" for 127.0.0.1 at 2018-07-07 16:29:32 +0300
+Processing by HomeController#tokenizecc as HTML
+  Rendering home/tokenizecc.erb within layouts/application
+  Rendered home/tokenizecc.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 23.6ms)
+
+
+Started POST "/home/tokenizecc" for 127.0.0.1 at 2018-07-07 16:29:34 +0300
+Processing by HomeController#tokenizecc as HTML
+  Parameters: {"customerId"=>"1"}
+  Rendering home/tokenizecc.erb within layouts/application
+  Rendered home/tokenizecc.erb within layouts/application (0.0ms)
+Completed 200 OK in 557ms (Views: 21.7ms)
+
+
+Started POST "/home/tokenizefail" for 127.0.0.1 at 2018-07-07 16:29:41 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/home/tokenizefail"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-07-07 16:39:32 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 26.8ms)
+
+
+Started GET "/home/tokenizecc" for 127.0.0.1 at 2018-07-07 16:39:34 +0300
+Processing by HomeController#tokenizecc as HTML
+  Rendering home/tokenizecc.erb within layouts/application
+  Rendered home/tokenizecc.erb within layouts/application (1.0ms)
+Completed 200 OK in 35ms (Views: 25.0ms)
+
+
+Started POST "/home/tokenizecc" for 127.0.0.1 at 2018-07-07 16:39:36 +0300
+Processing by HomeController#tokenizecc as HTML
+  Parameters: {"customerId"=>"1"}
+  Rendering home/tokenizecc.erb within layouts/application
+  Rendered home/tokenizecc.erb within layouts/application (1.0ms)
+Completed 200 OK in 350ms (Views: 39.2ms)
+
+
+Started POST "/home/tokenizefail" for 127.0.0.1 at 2018-07-07 16:39:42 +0300
+Processing by HomeController#tokenizefail as HTML
+  Parameters: {"StatusCode"=>"1", "ResultCode"=>"CCPY01023", "ResultMessage"=>"Ödeme işlemi kullanıcı tarafından sonlandırıldı.", "TokenId"=>""}
+  Rendering home/tokenizefail.erb within layouts/application
+  Rendered home/tokenizefail.erb within layouts/application (1.0ms)
+Completed 200 OK in 38ms (Views: 27.9ms)
+
+
+Started POST "/home/tokenizecc" for 127.0.0.1 at 2018-07-07 16:40:01 +0300
+Processing by HomeController#tokenizecc as HTML
+  Parameters: {"customerId"=>""}
+  Rendering home/tokenizecc.erb within layouts/application
+  Rendered home/tokenizecc.erb within layouts/application (1.0ms)
+Completed 200 OK in 148ms (Views: 21.0ms)
+
+
+Started POST "/home/tokenizesuccess" for 127.0.0.1 at 2018-07-07 16:40:10 +0300
+Processing by HomeController#tokenizesuccess as HTML
+  Parameters: {"StatusCode"=>"0", "ResultCode"=>"0", "ResultMessage"=>"Başarılı", "TokenId"=>"1f35c0a9-3ec5-4ab3-afa6-fbff8bc17eb7", "MaskedCCNo"=>"4025 91** **** 4708"}
+  Rendering home/tokenizesuccess.erb within layouts/application
+  Rendered home/tokenizesuccess.erb within layouts/application (0.0ms)
+Completed 200 OK in 39ms (Views: 28.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-07 17:03:39 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 36ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"tokenizecc", :controller=>"home"}):
+    78:         <li>
+    79:             <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false">Kart Saklama</a>
+    80:             <ul class="collapse list-unstyled" id="pageSubmenu6">
+    81:             <li> <%= link_to 'Url Yöntemi ile Kart Saklama', controller: 'home', action: 'tokenizecc' %></li>
+    82:             <li> <%= link_to 'Direk Kart Saklama', controller: 'home', action: 'transactionrequestbympay' %></li>
+    83:             
+    84:         
+  
+app/views/layouts/application.html.erb:81:in `_app_views_layouts_application_html_erb___830954149_130123000'
+Started GET "/" for 127.0.0.1 at 2018-07-07 17:04:00 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 23.8ms)
+
+
+Started GET "/home/tokenizeccurl" for 127.0.0.1 at 2018-07-07 17:04:02 +0300
+Processing by HomeController#tokenizeccurl as HTML
+  Rendering home/tokenizeccurl.erb within layouts/application
+  Rendered home/tokenizeccurl.erb within layouts/application (1.5ms)
+Completed 200 OK in 33ms (Views: 28.3ms)
+
+
+Started POST "/home/tokenizeccurl" for 127.0.0.1 at 2018-07-07 17:04:04 +0300
+Processing by HomeController#tokenizeccurl as HTML
+  Parameters: {"customerId"=>"1"}
+Completed 500 Internal Server Error in 5ms
+
+
+  
+NameError (uninitialized constant HomeController::Tokenizecc):
+  
+app/controllers/home_controller.rb:620:in `tokenizeccurl'
+Started GET "/home/tokenizeccurl" for 127.0.0.1 at 2018-07-07 17:04:27 +0300
+Processing by HomeController#tokenizeccurl as HTML
+  Rendering home/tokenizeccurl.erb within layouts/application
+  Rendered home/tokenizeccurl.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 23.5ms)
+
+
+Started POST "/home/tokenizeccurl" for 127.0.0.1 at 2018-07-07 17:04:29 +0300
+Processing by HomeController#tokenizeccurl as HTML
+  Parameters: {"customerId"=>"1"}
+  Rendering home/tokenizeccurl.erb within layouts/application
+  Rendered home/tokenizeccurl.erb within layouts/application (0.0ms)
+Completed 200 OK in 694ms (Views: 19.7ms)
+
+
+Started POST "/home/tokenizesuccess" for 127.0.0.1 at 2018-07-07 17:04:37 +0300
+Processing by HomeController#tokenizesuccess as HTML
+  Parameters: {"StatusCode"=>"0", "ResultCode"=>"0", "ResultMessage"=>"Başarılı", "TokenId"=>"4a2661f7-4b9a-4eec-a561-36a06f0cda16", "MaskedCCNo"=>"4025 91** **** 4708"}
+  Rendering home/tokenizesuccess.erb within layouts/application
+  Rendered home/tokenizesuccess.erb within layouts/application (0.0ms)
+Completed 200 OK in 55ms (Views: 39.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-07 17:05:23 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 30.0ms)
+
+
+Started GET "/home/tokenizeccurl" for 127.0.0.1 at 2018-07-07 17:05:25 +0300
+Processing by HomeController#tokenizeccurl as HTML
+  Rendering home/tokenizeccurl.erb within layouts/application
+  Rendered home/tokenizeccurl.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 26.3ms)
+
+
+Started POST "/home/tokenizeccurl" for 127.0.0.1 at 2018-07-07 17:05:26 +0300
+Processing by HomeController#tokenizeccurl as HTML
+  Parameters: {"customerId"=>"1"}
+  Rendering home/tokenizeccurl.erb within layouts/application
+  Rendered home/tokenizeccurl.erb within layouts/application (1.0ms)
+Completed 200 OK in 335ms (Views: 32.0ms)
+
+
+Started POST "/home/tokenizefail" for 127.0.0.1 at 2018-07-07 17:05:34 +0300
+Processing by HomeController#tokenizefail as HTML
+  Parameters: {"StatusCode"=>"1", "ResultCode"=>"CCPY01023", "ResultMessage"=>"Ödeme işlemi kullanıcı tarafından sonlandırıldı.", "TokenId"=>""}
+  Rendering home/tokenizefail.erb within layouts/application
+  Rendered home/tokenizefail.erb within layouts/application (0.0ms)
+Completed 200 OK in 34ms (Views: 25.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-07 17:15:36 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 34ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"tokenizecc", :controller=>"home"}):
+    79:             <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false">Kart Saklama</a>
+    80:             <ul class="collapse list-unstyled" id="pageSubmenu6">
+    81:             <li> <%= link_to 'Url Yöntemi ile Kart Saklama', controller: 'home', action: 'tokenizeccurl' %></li>
+    82:             <li> <%= link_to 'Direk Kart Saklama', controller: 'home', action: 'tokenizecc' %></li>
+    83:             
+    84:         
+    85: 
+  
+app/views/layouts/application.html.erb:82:in `_app_views_layouts_application_html_erb___830954149_124581720'
+Started GET "/" for 127.0.0.1 at 2018-07-07 17:16:22 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 36ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"tokenizecc", :controller=>"home"}):
+    79:             <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false">Kart Saklama</a>
+    80:             <ul class="collapse list-unstyled" id="pageSubmenu6">
+    81:             <li> <%= link_to 'Url Yöntemi ile Kart Saklama', controller: 'home', action: 'tokenizeccurl' %></li>
+    82:             <li> <%= link_to 'Direk Kart Saklama', controller: 'home', action: 'tokenizecc' %></li>
+    83:             
+    84:         
+    85: 
+  
+app/views/layouts/application.html.erb:82:in `_app_views_layouts_application_html_erb___830954149_113962380'
+Started GET "/" for 127.0.0.1 at 2018-07-07 17:17:02 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 32.9ms)
+
+
+Started GET "/home/tokenizecc" for 127.0.0.1 at 2018-07-07 17:17:04 +0300
+Processing by HomeController#tokenizecc as HTML
+  Rendering home/tokenizecc.erb within layouts/application
+  Rendered home/tokenizecc.erb within layouts/application (0.0ms)
+Completed 200 OK in 33ms (Views: 22.6ms)
+
+
+Started GET "/home/tokenizecc" for 127.0.0.1 at 2018-07-07 17:18:21 +0300
+Processing by HomeController#tokenizecc as HTML
+  Rendering home/tokenizecc.erb within layouts/application
+  Rendered home/tokenizecc.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 23.9ms)
+
+
+Started POST "/home/tokenizecc" for 127.0.0.1 at 2018-07-07 17:18:24 +0300
+Processing by HomeController#tokenizecc as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "customerId"=>"1"}
+Completed 500 Internal Server Error in 6ms
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/helpers/tokenizeccrequest.rb:43:in `+'
+app/helpers/tokenizeccrequest.rb:43:in `to_xml'
+app/helpers/tokenizeccrequest.rb:20:in `execute'
+app/controllers/home_controller.rb:658:in `tokenizecc'
+Started GET "/home/tokenizecc" for 127.0.0.1 at 2018-07-07 17:18:59 +0300
+Processing by HomeController#tokenizecc as HTML
+  Rendering home/tokenizecc.erb within layouts/application
+  Rendered home/tokenizecc.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 25.4ms)
+
+
+Started POST "/home/tokenizecc" for 127.0.0.1 at 2018-07-07 17:19:01 +0300
+Processing by HomeController#tokenizecc as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"4282209004348015", "expireMonth"=>"12", "expireYear"=>"2022", "cvv"=>"123", "customerId"=>"1"}
+  Rendering home/tokenizecc.erb within layouts/application
+  Rendered home/tokenizecc.erb within layouts/application (1.0ms)
+Completed 200 OK in 370ms (Views: 21.6ms)
+
+
+Started GET "/TokenizeCCUrl" for 127.0.0.1 at 2018-07-07 17:55:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/TokenizeCCUrl"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/TokenizeCCUrl" for 127.0.0.1 at 2018-07-07 17:55:17 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/TokenizeCCUrl"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/TokenizeCCUrl" for 127.0.0.1 at 2018-07-07 17:55:18 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/TokenizeCCUrl"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/TokenizeCCUrl" for 127.0.0.1 at 2018-07-07 17:55:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/TokenizeCCUrl"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/UrlCCTokenize" for 127.0.0.1 at 2018-07-07 18:15:15 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/UrlCCTokenize"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
