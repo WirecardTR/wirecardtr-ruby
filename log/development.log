@@ -18035,3 +18035,594 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-08-18 16:01:14 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 929ms (Views: 148.2ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:01:37 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (0.0ms)
+Completed 200 OK in 313ms (Views: 31.0ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:02:41 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 24.1ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:02:55 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 307ms (Views: 21.5ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:06:54 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 214ms (Views: 26.0ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:07:10 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 24.6ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:07:44 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 670ms (Views: 34.4ms)
+
+
+Started POST "/home/fail" for 127.0.0.1 at 2018-08-18 16:08:09 +0300
+Processing by HomeController#fail as HTML
+  Parameters: {"OrderId"=>"82b2b62e-ac09-46c3-bf4d-68e229897605", "MPAY"=>"", "StatusCode"=>"1", "ResultCode"=>"CCPY01044", "ResultMessage"=>"Güvenlik doğrulaması başarılı bir şekilde tamamlanamadığı için işlem başarısız olarak sonuçlandırılmıştır.", "LastTransactionDate"=>"20180818160810", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"WjhnMIJKhCiOMHseWX1Q3OME2fU="}
+  Rendering home/fail.erb within layouts/application
+  Rendered home/fail.erb within layouts/application (0.0ms)
+Completed 200 OK in 41ms (Views: 21.7ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:08:22 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 21.9ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:08:36 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (0.0ms)
+Completed 200 OK in 676ms (Views: 30.6ms)
+
+
+Started POST "/home/fail" for 127.0.0.1 at 2018-08-18 16:09:00 +0300
+Processing by HomeController#fail as HTML
+  Parameters: {"OrderId"=>"eefaccb2-4685-4dd3-9a65-0ee8290248d6", "MPAY"=>"", "StatusCode"=>"1", "ResultCode"=>"CCPY01044", "ResultMessage"=>"Güvenlik doğrulaması başarılı bir şekilde tamamlanamadığı için işlem başarısız olarak sonuçlandırılmıştır.", "LastTransactionDate"=>"20180818160900", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"LqcEoVR70GDNFVAkk03Xe3aQbfk="}
+  Rendering home/fail.erb within layouts/application
+  Rendered home/fail.erb within layouts/application (0.0ms)
+Completed 200 OK in 37ms (Views: 26.7ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:09:25 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 596ms (Views: 21.8ms)
+
+
+Started POST "/home/success" for 127.0.0.1 at 2018-08-18 16:09:52 +0300
+Processing by HomeController#success as HTML
+  Parameters: {"OrderId"=>"7a5f0573-9bb8-4bca-b5eb-e9ed9661bba8", "MPAY"=>"", "StatusCode"=>"0", "ResultCode"=>"00", "ResultMessage"=>"Approved: ", "LastTransactionDate"=>"20180818160952", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"LGxUtHZCyzaVGSPmWCl7AsQeScc="}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/home_controller.rb:694:in `success'
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:11:33 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (0.0ms)
+Completed 200 OK in 28ms (Views: 21.9ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:12:02 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Ahmet Yılmaz", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 793ms (Views: 70.5ms)
+
+
+Started POST "/home/fail" for 127.0.0.1 at 2018-08-18 16:12:22 +0300
+Processing by HomeController#fail as HTML
+  Parameters: {"OrderId"=>"4d2a5d46-d9d4-435f-b46b-18b1c83bae1e", "MPAY"=>"", "StatusCode"=>"1", "ResultCode"=>"CCPY01044", "ResultMessage"=>"Güvenlik doğrulaması başarılı bir şekilde tamamlanamadığı için işlem başarısız olarak sonuçlandırılmıştır.", "LastTransactionDate"=>"20180818161222", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"sxfxm5bQ8i0RddmdCfYzMAWq0L0="}
+  Rendering home/fail.erb within layouts/application
+  Rendered home/fail.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 25.0ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:12:44 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 741ms (Views: 40.5ms)
+
+
+Started POST "/home/success" for 127.0.0.1 at 2018-08-18 16:13:07 +0300
+Processing by HomeController#success as HTML
+  Parameters: {"OrderId"=>"9d179dcc-6087-4bec-9248-b4a051dbcf80", "MPAY"=>"", "StatusCode"=>"0", "ResultCode"=>"00", "ResultMessage"=>"Approved: ", "LastTransactionDate"=>"20180818161308", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"NWh90heWgpfO0GV98yCD0QO7RiQ="}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/home_controller.rb:694:in `success'
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:15:32 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (0.0ms)
+Completed 200 OK in 30ms (Views: 24.0ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:15:47 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 704ms (Views: 21.4ms)
+
+
+Started POST "/home/fail" for 127.0.0.1 at 2018-08-18 16:16:05 +0300
+Processing by HomeController#fail as HTML
+  Parameters: {"OrderId"=>"ab98ac8d-0f24-45f1-9a9a-e26e861f1013", "MPAY"=>"", "StatusCode"=>"1", "ResultCode"=>"CCPY01044", "ResultMessage"=>"Güvenlik doğrulaması başarılı bir şekilde tamamlanamadığı için işlem başarısız olarak sonuçlandırılmıştır.", "LastTransactionDate"=>"20180818161606", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"8/0QnT4Mh1+B8masItun9mizKhE="}
+  Rendering home/fail.erb within layouts/application
+  Rendered home/fail.erb within layouts/application (0.0ms)
+Completed 200 OK in 34ms (Views: 21.4ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:16:19 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (0.0ms)
+Completed 200 OK in 592ms (Views: 20.8ms)
+
+
+Started POST "/home/success" for 127.0.0.1 at 2018-08-18 16:16:43 +0300
+Processing by HomeController#success as HTML
+  Parameters: {"OrderId"=>"6df56f37-812c-4761-9b3c-dee7db33abd3", "MPAY"=>"", "StatusCode"=>"0", "ResultCode"=>"00", "ResultMessage"=>"Approved: ", "LastTransactionDate"=>"20180818161644", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"3OXJvTPPAyhSMe/1OeD3tJxQa2E="}
+Completed 500 Internal Server Error in 4ms
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/home_controller.rb:698:in `success'
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:19:56 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (0.0ms)
+Completed 200 OK in 29ms (Views: 22.9ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:20:08 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"123", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (0.0ms)
+Completed 200 OK in 777ms (Views: 22.7ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:20:14 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 19.6ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:20:21 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (0.0ms)
+Completed 200 OK in 616ms (Views: 19.8ms)
+
+
+Started POST "/home/success" for 127.0.0.1 at 2018-08-18 16:20:46 +0300
+Processing by HomeController#success as HTML
+  Parameters: {"OrderId"=>"e82267cc-91d2-4d85-b1b4-5b99695d7822", "MPAY"=>"", "StatusCode"=>"0", "ResultCode"=>"00", "ResultMessage"=>"Approved: ", "LastTransactionDate"=>"20180818162047", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"mYy/Isa8+cWdD9VFZ/5lJFy3tUM="}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NoMethodError (undefined method `to_str' for nil:NilClass
+Did you mean?  to_s
+               to_r):
+  
+app/controllers/home_controller.rb:694:in `success'
+Started GET "/home/success" for 127.0.0.1 at 2018-08-18 16:21:22 +0300
+Processing by HomeController#success as HTML
+  Rendering home/success.erb within layouts/application
+  Rendered home/success.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 24.4ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:21:27 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 23.7ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:21:45 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 747ms (Views: 26.9ms)
+
+
+Started POST "/home/fail" for 127.0.0.1 at 2018-08-18 16:22:06 +0300
+Processing by HomeController#fail as HTML
+  Parameters: {"OrderId"=>"c96142af-d5af-44f8-8c8e-88351a5ca0ba", "MPAY"=>"", "StatusCode"=>"1", "ResultCode"=>"CCPY01044", "ResultMessage"=>"Güvenlik doğrulaması başarılı bir şekilde tamamlanamadığı için işlem başarısız olarak sonuçlandırılmıştır.", "LastTransactionDate"=>"20180818162207", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"s6GTRTecD5eXaohe5xMWVg7FZws="}
+  Rendering home/fail.erb within layouts/application
+  Rendered home/fail.erb within layouts/application (0.0ms)
+Completed 200 OK in 34ms (Views: 27.3ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:22:10 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 29.0ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:22:22 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 608ms (Views: 46.8ms)
+
+
+Started POST "/home/success" for 127.0.0.1 at 2018-08-18 16:22:45 +0300
+Processing by HomeController#success as HTML
+  Parameters: {"OrderId"=>"609fc600-82e4-48bf-a278-9414ea473f09", "MPAY"=>"", "StatusCode"=>"0", "ResultCode"=>"00", "ResultMessage"=>"Approved: ", "LastTransactionDate"=>"20180818162246", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"TLtjSgJ2N+y0+xsL98wVH4DNxbs="}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/home_controller.rb:736:in `+'
+app/controllers/home_controller.rb:736:in `success'
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:23:31 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 22.2ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:23:49 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 630ms (Views: 40.9ms)
+
+
+Started POST "/home/success" for 127.0.0.1 at 2018-08-18 16:24:13 +0300
+Processing by HomeController#success as HTML
+  Parameters: {"OrderId"=>"52ebfcdc-908f-4809-bc59-8461c7383acb", "MPAY"=>"", "StatusCode"=>"0", "ResultCode"=>"00", "ResultMessage"=>"Approved: ", "LastTransactionDate"=>"20180818162413", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"ec7KzdtjrV7AojB3AU47+LxLuNs="}
+  Rendering home/success.erb within layouts/application
+  Rendered home/success.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 24.2ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:25:27 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (0.0ms)
+Completed 200 OK in 29ms (Views: 21.0ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:25:37 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (0.0ms)
+Completed 200 OK in 617ms (Views: 40.2ms)
+
+
+Started POST "/home/success" for 127.0.0.1 at 2018-08-18 16:26:06 +0300
+Processing by HomeController#success as HTML
+  Parameters: {"OrderId"=>"bc70be4e-cab0-451d-a5d2-c512a1ef245f", "MPAY"=>"", "StatusCode"=>"0", "ResultCode"=>"00", "ResultMessage"=>"Approved: ", "LastTransactionDate"=>"20180818162606", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"LPqGC1xaM1yaf/Tuh6/bm/ADstE="}
+  Rendering home/success.erb within layouts/application
+  Rendered home/success.erb within layouts/application (1.0ms)
+Completed 200 OK in 38ms (Views: 24.1ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:27:57 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 26.3ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:29:34 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 623ms (Views: 21.1ms)
+
+
+Started POST "/home/success" for 127.0.0.1 at 2018-08-18 16:29:44 +0300
+Processing by HomeController#success as HTML
+  Parameters: {"OrderId"=>"bc70be4e-cab0-451d-a5d2-c512a1ef245f", "MPAY"=>"", "StatusCode"=>"0", "ResultCode"=>"00", "ResultMessage"=>"Approved: ", "LastTransactionDate"=>"20180818162606", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"LPqGC1xaM1yaf/Tuh6/bm/ADstE="}
+  Rendering home/success.erb within layouts/application
+  Rendered home/success.erb within layouts/application (0.0ms)
+Completed 200 OK in 28ms (Views: 20.2ms)
+
+
+Started POST "/home/fail" for 127.0.0.1 at 2018-08-18 16:30:44 +0300
+Processing by HomeController#fail as HTML
+  Parameters: {"OrderId"=>"be7d54bb-25f1-40cc-8e15-3316ae468315", "MPAY"=>"", "StatusCode"=>"1", "ResultCode"=>"CCPY01044", "ResultMessage"=>"Güvenlik doğrulaması başarılı bir şekilde tamamlanamadığı için işlem başarısız olarak sonuçlandırılmıştır.", "LastTransactionDate"=>"20180818163044", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"IzbFWqHfutduZuOTxiv/Q4Wwzq0="}
+  Rendering home/fail.erb within layouts/application
+  Rendered home/fail.erb within layouts/application (1.0ms)
+Completed 200 OK in 54ms (Views: 32.0ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:31:19 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 743ms (Views: 25.5ms)
+
+
+Started POST "/home/success" for 127.0.0.1 at 2018-08-18 16:31:52 +0300
+Processing by HomeController#success as HTML
+  Parameters: {"OrderId"=>"84fbbaa4-f459-435d-abed-3a23b9258fd6", "MPAY"=>"", "StatusCode"=>"0", "ResultCode"=>"00", "ResultMessage"=>"Approved: ", "LastTransactionDate"=>"20180818163152", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"Mkqi8RlzOzGxuEq2mKw3VFW68UM="}
+  Rendering home/success.erb within layouts/application
+  Rendered home/success.erb within layouts/application (0.0ms)
+Completed 200 OK in 29ms (Views: 22.3ms)
+
+
+Started GET "/Assets/css/bootstrap.min.css.map" for 127.0.0.1 at 2018-08-18 16:32:11 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/Assets/css/bootstrap.min.css.map"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/home/success" for 127.0.0.1 at 2018-08-18 16:33:13 +0300
+Processing by HomeController#success as HTML
+  Parameters: {"OrderId"=>"84fbbaa4-f459-435d-abed-3a23b9258fd6", "MPAY"=>"", "StatusCode"=>"0", "ResultCode"=>"00", "ResultMessage"=>"Approved: ", "LastTransactionDate"=>"20180818163152", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"Mkqi8RlzOzGxuEq2mKw3VFW68UM="}
+  Rendering home/success.erb within layouts/application
+  Rendered home/success.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 21.8ms)
+
+
+Started GET "/Assets/css/bootstrap.min.css.map" for 127.0.0.1 at 2018-08-18 16:33:14 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/Assets/css/bootstrap.min.css.map"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:33:34 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 704ms (Views: 21.4ms)
+
+
+Started POST "/home/fail" for 127.0.0.1 at 2018-08-18 16:34:00 +0300
+Processing by HomeController#fail as HTML
+  Parameters: {"OrderId"=>"99b598b9-559b-471b-ade0-2b7560fee603", "MPAY"=>"", "StatusCode"=>"1", "ResultCode"=>"CCPY01044", "ResultMessage"=>"Güvenlik doğrulaması başarılı bir şekilde tamamlanamadığı için işlem başarısız olarak sonuçlandırılmıştır.", "LastTransactionDate"=>"20180818163400", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"mV/Ewy5jXKx7DQYZa6LkLJ++kME="}
+  Rendering home/fail.erb within layouts/application
+  Rendered home/fail.erb within layouts/application (0.0ms)
+Completed 200 OK in 27ms (Views: 20.8ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:34:20 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 595ms (Views: 22.8ms)
+
+
+Started POST "/home/success" for 127.0.0.1 at 2018-08-18 16:34:46 +0300
+Processing by HomeController#success as HTML
+  Parameters: {"OrderId"=>"22a70095-16ef-4055-9a34-7d64ce40dd30", "MPAY"=>"", "StatusCode"=>"0", "ResultCode"=>"00", "ResultMessage"=>"Approved: ", "LastTransactionDate"=>"20180818163447", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"CY35hmtC0Fz/O1TMYa1und+NNsU="}
+  Rendering home/success.erb within layouts/application
+  Rendered home/success.erb within layouts/application (0.0ms)
+Completed 200 OK in 26ms (Views: 18.9ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:35:53 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 24.4ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:36:13 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 167ms (Views: 23.8ms)
+
+
+Started GET "/home/ccproxysaleform" for 127.0.0.1 at 2018-08-18 16:36:18 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (1.0ms)
+Completed 200 OK in 114ms (Views: 22.6ms)
+
+
+Started GET "/home/ccproxysaleform" for 127.0.0.1 at 2018-08-18 16:36:44 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 23.8ms)
+
+
+Started POST "/home/ccproxysaleform" for 127.0.0.1 at 2018-08-18 16:36:58 +0300
+Processing by HomeController#ccproxysaleform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysaleform.erb within layouts/application
+  Rendered home/ccproxysaleform.erb within layouts/application (1.0ms)
+Completed 200 OK in 2258ms (Views: 40.1ms)
+
+
+Started GET "/home/wdticketsale3durlproxy" for 127.0.0.1 at 2018-08-18 16:37:08 +0300
+Processing by HomeController#wdticketsale3durlproxy as HTML
+  Rendering home/wdticketsale3durlproxy.erb within layouts/application
+  Rendered home/wdticketsale3durlproxy.erb within layouts/application (1.0ms)
+Completed 200 OK in 76ms (Views: 22.9ms)
+
+
+Started GET "/home/wdticketsale3durlproxy" for 127.0.0.1 at 2018-08-18 16:37:10 +0300
+Processing by HomeController#wdticketsale3durlproxy as HTML
+  Rendering home/wdticketsale3durlproxy.erb within layouts/application
+  Rendered home/wdticketsale3durlproxy.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 23.5ms)
+
+
+Started GET "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:37:14 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 27.6ms)
+
+
+Started POST "/home/ccproxysale3dform" for 127.0.0.1 at 2018-08-18 16:37:26 +0300
+Processing by HomeController#ccproxysale3dform as HTML
+  Parameters: {"ownerName"=>"Coskun Kurtuldu", "creditCardNo"=>"5352170002917023", "expireMonth"=>"03", "expireYear"=>"2028", "cvv"=>"339", "installmentCount"=>"0"}
+  Rendering home/ccproxysale3dform.erb within layouts/application
+  Rendered home/ccproxysale3dform.erb within layouts/application (1.0ms)
+Completed 200 OK in 627ms (Views: 28.2ms)
+
+
+Started POST "/home/success" for 127.0.0.1 at 2018-08-18 16:37:49 +0300
+Processing by HomeController#success as HTML
+  Parameters: {"OrderId"=>"c3b9cf79-f38b-4189-b0c0-80dd876d88d9", "MPAY"=>"", "StatusCode"=>"0", "ResultCode"=>"00", "ResultMessage"=>"Approved: ", "LastTransactionDate"=>"20180818163750", "MaskedCCNo"=>"5352 17** **** 7023", "CCTokenId"=>"00000000-0000-0000-0000-000000000000", "Price"=>"1", "ExtraParam"=>"", "HashParam"=>"+rZZBSOaL2VGg6KQ8mrYhjadyX0="}
+  Rendering home/success.erb within layouts/application
+  Rendered home/success.erb within layouts/application (0.0ms)
+Completed 200 OK in 29ms (Views: 22.4ms)
+
+
+Started GET "/CCProxySale3D" for 127.0.0.1 at 2018-08-18 16:56:07 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/CCProxySale3D"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-08-18 16:56:14 +0300
+  
+SyntaxError (D:/wirecardgithub/wirecardtr-ruby/app/controllers/home_controller.rb:853: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/home_controller.rb:853: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-08-18 17:01:38 +0300
+  
+SyntaxError (D:/wirecardgithub/wirecardtr-ruby/app/controllers/home_controller.rb:853: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/home_controller.rb:853: syntax error, unexpected end-of-input, expecting keyword_end

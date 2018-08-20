@@ -1,6 +1,8 @@
 require "rexml/document"
 require 'date'
- class HomeController < ApplicationController
+require 'digest'
+
+class HomeController < ApplicationController
 
     def index
 
@@ -9,7 +11,7 @@ require 'date'
     #pro Api Action'ı  temsil eder.
     def proapi
       if request.post?
-
+        
         token= Token.new
         token.UserCode= @@settings.UserCode
         token.Pin=@@settings.Pin 
@@ -282,8 +284,8 @@ end
         req.Description = "Bilgisayar"
         req.ExtraParam = ""
         req.Port = "123"
-        req.ErrorURL = "http://localhost:3000/home/fail"
-        req.SuccessURL = "http://localhost:3000/home/success"
+        req.ErrorURL = "http://localhost:3000/home/fail/"
+        req.SuccessURL = "http://localhost:3000/home/success/"
         #region Token
         req.Token = Token.new
         req.Token.UserCode = @@settings.UserCode
@@ -303,7 +305,7 @@ end
          req.Cardtokenization.RequestType ="0"
          req.Cardtokenization.CustomerId ="01"
          req.Cardtokenization.ValidityPeriod ="0"
-         req.Cardtokenization.CCTokenId =SecureRandom.uuid
+         req.Cardtokenization.CCTokenId =""
          
          #endregion 
         @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
@@ -687,8 +689,17 @@ end
     end
 
     def success
+      
+     
       if request.post?
         if (params != nil)
+
+          hashKey = @@settings.HashKey
+          hashString = params[:Statuscode].to_s+params[:LastTransactionDate].to_s+params[:MPAY].to_s+params[:OrderId].to_s.downcase + hashKey.to_s
+          hashString.force_encoding('iso-8859-9')
+          hashedString = Digest::SHA1.base64digest(hashString)
+
+
           output = "<?xml version='1.0' encoding='UTF-8' ?>"
           output += "<Response>"
           if(params[:OrderId] != nil)
@@ -718,8 +729,15 @@ end
           if(params[:ExtraParam] != nil)
             output += "<ExtraParam>" + params[:ExtraParam] + "</ExtraParam>"
           end
+          if(params[:HashParam] != nil)
+            output += "<HashParam>" + params[:HashParam] + "</HashParam>"
+            output += "<hashedString>" + hashedString + "</hashedString>"
+          end
+
           output += "</Response>"
           puts "XML OUTPUT : " + output
+          if (params[:HashParam] ==hashedString)
+            message="Gelen Hash değerinin doğru hesaplanmış olması işlem güvenliği açısından önemlidir !"
         
           @returnData = output
         else
