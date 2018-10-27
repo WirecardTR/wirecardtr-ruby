@@ -7,6 +7,7 @@ class Marketplacewdticketmpsalerequest
     attr_accessor :OperationType
     attr_accessor :Token
     attr_accessor :MPAY
+    attr_accessor :CurrencyCode
     attr_accessor :ExtraParam
     attr_accessor :Description
     attr_accessor :ErrorURL
@@ -35,6 +36,7 @@ class Marketplacewdticketmpsalerequest
         </Token>
    
             <MPAY>"+req.MPAY+"</MPAY>
+            <CurrencyCode>"+req.CurrencyCode+"</CurrencyCode>
             <ExtraParam>"+req.ExtraParam+"</ExtraParam>
             <Description>"+req.Description+"</Description>
             <ErrorURL>"+req.ErrorURL+"</ErrorURL>

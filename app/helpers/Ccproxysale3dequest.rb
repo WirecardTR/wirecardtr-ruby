@@ -9,6 +9,7 @@ class Ccproxysale3dequest
     attr_accessor :Token
     attr_accessor :Creditcardinfo
     attr_accessor :MPAY
+    attr_accessor :CurrencyCode
     attr_accessor :IPAddress
     attr_accessor :PaymentContent
     attr_accessor :InstallmentCount  
@@ -51,6 +52,7 @@ class Ccproxysale3dequest
             <CCTokenId>"+req.Cardtokenization.CCTokenId+"</CCTokenId>
         </CardTokenization>
             <MPAY>"+req.MPAY+"</MPAY>  
+            <CurrencyCode>"+req.CurrencyCode+"</CurrencyCode>  
             <Port>"+req.Port+"</Port> 
             <ErrorURL>"+req.ErrorURL+"</ErrorURL>
             <SuccessURL>"+req.SuccessURL+"</SuccessURL> 

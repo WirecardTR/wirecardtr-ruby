@@ -278,14 +278,15 @@ end
         req.ServiceType = "CCProxy"
         req.OperationType = "Sale3DSEC"
         req.MPAY = ""
+        req.CurrencyCode=params[:currencyCode]
         req.IPAddress = "127.0.0.1";
         req.PaymentContent = "BLGSYR01"
         req.InstallmentCount =params[:installmentCount] 
         req.Description = "Bilgisayar"
         req.ExtraParam = ""
         req.Port = "123"
-        req.ErrorURL = "http://localhost:3000/home/fail/"
-        req.SuccessURL = "http://localhost:3000/home/success/"
+        req.ErrorURL = "http://localhost:3000/home/failpost/"
+        req.SuccessURL = "http://localhost:3000/home/failpost/"
         #region Token
         req.Token = Token.new
         req.Token.UserCode = @@settings.UserCode
@@ -322,6 +323,7 @@ end
         req.ServiceType = "CCProxy"
         req.OperationType = "Sale"
         req.MPAY = ""
+        req.CurrencyCode=params[:currencyCode] 
         req.IPAddress = "127.0.0.1";
         req.PaymentContent = "BLGSYR01"
         req.InstallmentCount =params[:installmentCount] 
@@ -347,7 +349,7 @@ end
          req.Cardtokenization.RequestType ="0"
          req.Cardtokenization.CustomerId ="01"
          req.Cardtokenization.ValidityPeriod ="0"
-         req.Cardtokenization.CCTokenId =SecureRandom.uuid
+         req.Cardtokenization.CCTokenId =""
          
          #endregion 
         @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
@@ -363,8 +365,9 @@ end
         req.OperationType = "Sale3DSURLProxy";
         req.Price = "1"; #0,01 TL
         req.MPAY = "";
-        req.ErrorURL = "http://localhost:3000/home/Fail";
-        req.SuccessURL = "http://localhost:3000/home/Success";
+        req.CurrencyCode="TRY"
+        req.ErrorURL = "http://localhost:3000/home/failpost/";
+        req.SuccessURL = "http://localhost:3000/home/successpost/";
         req.ExtraParam = "";
         req.PaymentContent = "Bilgisayar";
         req.Description = "BLGSYR01";
@@ -389,8 +392,9 @@ end
         req.OperationType = "SaleURLProxy";
         req.Price = "1"; #0,01 TL
         req.MPAY = "";
-        req.ErrorURL = "http://localhost:3000/home/Fail";
-        req.SuccessURL = "http://localhost:3000/home/Success";
+        req.CurrencyCode="TRY"
+        req.ErrorURL = "http://localhost:3000/home/failpost/";
+        req.SuccessURL = "http://localhost:3000/home/successpost/";
         req.ExtraParam = "";
         req.PaymentContent = "Bilgisayar";
         req.Description = "BLGSYR01";
@@ -508,6 +512,7 @@ end
         req.ServiceType = "CCMarketPlace"
         req.OperationType = "Sale3DSEC"
         req.MPAY = ""
+        req.CurrencyCode=params[:currencyCode] 
         req.IPAddress = "127.0.0.1";
         req.Port = "123"
         req.Description = "Bilgisayar"
@@ -516,8 +521,8 @@ end
         req.ExtraParam = ""
         req.PaymentContent = "BLGSYR01"
         req.SubPartnerId = params[:subPartnerId]
-        req.ErrorURL = "http://localhost:3000/home/MarketPlaceError"
-        req.SuccessURL = "http://localhost:3000/home/MarketPlaceSuccess"
+        req.ErrorURL = "http://localhost:3000/home/failpost"
+        req.SuccessURL = "http://localhost:3000/home/successpost"
         #region Token
         req.Token = Token.new
         req.Token.UserCode = @@settings.UserCode
@@ -537,7 +542,7 @@ end
          req.Cardtokenization.RequestType ="0"
          req.Cardtokenization.CustomerId ="01"
          req.Cardtokenization.ValidityPeriod ="0"
-         req.Cardtokenization.CCTokenId =SecureRandom.uuid
+         req.Cardtokenization.CCTokenId =""
          
          #endregion
         @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
@@ -552,6 +557,7 @@ end
         req.OperationType = "MPSale"
         req.Price = "1";#0,01 TL
         req.MPAY = "01"
+        req.CurrencyCode=params[:currencyCode] 
         req.IPAddress = "127.0.0.1";
         req.Port = "123"
         req.Description = "Bilgisayar"
@@ -560,8 +566,8 @@ end
         req.ExtraParam = ""
         req.PaymentContent = "BLGSYR01"
         req.SubPartnerId = params[:subPartnerId]
-        req.ErrorURL = "http://localhost:3000/home/fail"
-        req.SuccessURL = "http://localhost:3000/home/success"
+        req.ErrorURL = "http://localhost:3000/home/failpost"
+        req.SuccessURL = "http://localhost:3000/home/successpost"
         #region Token
         req.Token = Token.new
         req.Token.UserCode = @@settings.UserCode
@@ -581,7 +587,7 @@ end
         req.Cardtokenization.RequestType ="0"
         req.Cardtokenization.CustomerId ="01"
         req.Cardtokenization.ValidityPeriod ="0"
-        req.Cardtokenization.CCTokenId =SecureRandom.uuid
+        req.Cardtokenization.CCTokenId =""
         
         #endregion 
 
@@ -598,13 +604,14 @@ end
         req.OperationType = "MPSale3DSECWithUrl"
         req.Price = "1";#0,01 TL
         req.MPAY = "01"
+        req.CurrencyCode=params[:currencyCode] 
         req.Description = "Bilgisayar"
         req.CommissionRate = "100"; #komisyon oranı 1. 100 ile çarpılıp gönderiliyor
         req.ExtraParam = ""
         req.PaymentContent = "BLGSYR01"
         req.SubPartnerId = params[:subPartnerId]
-        req.ErrorURL = "http://localhost:3000/home/fail"
-        req.SuccessURL = "http://localhost:3000/home/success"
+        req.ErrorURL = "http://localhost:3000/home/failpost"
+        req.SuccessURL = "http://localhost:3000/home/successpost"
         #region Token
         req.Token = Token.new
         req.Token.UserCode = @@settings.UserCode
@@ -689,17 +696,14 @@ end
     end
 
     def success
-      
-     
       if request.post?
+        p params
         if (params != nil)
 
           hashKey = @@settings.HashKey
           hashString = params[:Statuscode].to_s+params[:LastTransactionDate].to_s+params[:MPAY].to_s+params[:OrderId].to_s.downcase + hashKey.to_s
           hashString.force_encoding('iso-8859-9')
           hashedString = Digest::SHA1.base64digest(hashString)
-
-
           output = "<?xml version='1.0' encoding='UTF-8' ?>"
           output += "<Response>"
           if(params[:OrderId] != nil)
@@ -849,5 +853,103 @@ end
       end
     end
 
+    def successpost
+      if request.post?
+       
+        if (params != nil)
 
+          hashKey = @@settings.HashKey
+          hashString = params[:Statuscode].to_s+params[:LastTransactionDate].to_s+params[:MPAY].to_s+params[:OrderId].to_s.downcase + hashKey.to_s
+          hashString.force_encoding('iso-8859-9')
+          hashedString = Digest::SHA1.base64digest(hashString)
+          output = "<?xml version='1.0' encoding='UTF-8' ?>"
+          output += "<Response>"
+          if(params[:OrderId] != nil)
+            output += "<OrderId>" + params[:OrderId] + "</OrderId>"
+          end
+          if(params[:MPAY] != nil)
+            output += "<MPAY>" + params[:MPAY] + "</MPAY>"
+          end
+          if(params[:Statuscode] != nil)
+            output += "<Statuscode>" + params[:Statuscode] + "</Statuscode>"
+          end
+          if(params[:ResultCode] != nil)
+            output += "<ResultCode>" + params[:ResultCode] + "</ResultCode>"
+          end
+          if(params[:ResultMessage] != nil)
+            output += "<ResultMessage>" + params[:ResultMessage] + "</ResultMessage>"
+          end
+          if(params[:LastTransactionDate] != nil)
+            output += "<LastTransactionDate>" + params[:LastTransactionDate] + "</LastTransactionDate>"
+          end
+          if(params[:MaskedCCNo] != nil)
+            output += "<MaskedCCNo>" + params[:MaskedCCNo] + "</MaskedCCNo>"
+          end
+          if(params[:CCTokenId] != nil)
+            output += "<CCTokenId>" + params[:CCTokenId] + "</CCTokenId>"
+          end
+          if(params[:ExtraParam] != nil)
+            output += "<ExtraParam>" + params[:ExtraParam] + "</ExtraParam>"
+          end
+          if(params[:HashParam] != nil)
+            output += "<HashParam>" + params[:HashParam] + "</HashParam>"
+            output += "<hashedString>" + hashedString + "</hashedString>"
+          end
+
+          output += "</Response>"
+          puts "XML OUTPUT : " + output
+          if (params[:HashParam] ==hashedString)
+            message="Gelen Hash değerinin doğru hesaplanmış olması işlem güvenliği açısından önemlidir !"
+        
+          @returnData = output
+        else
+          @returnData = "nil"
+        end
+      else
+      end
+    end
+  end
+  def failpost
+    if request.post?
+      if (params != nil)
+        output = "<?xml version='1.0' encoding='UTF-8' ?>"
+        output += "<Response>"
+        if(params[:OrderId] != nil)
+          output += "<OrderId>" + params[:OrderId] + "</OrderId>"
+        end
+        if(params[:MPAY] != nil)
+          output += "<MPAY>" + params[:MPAY] + "</MPAY>"
+        end
+        if(params[:Statuscode] != nil)
+          output += "<Statuscode>" + params[:Statuscode] + "</Statuscode>"
+        end
+        if(params[:ResultCode] != nil)
+          output += "<ResultCode>" + params[:ResultCode] + "</ResultCode>"
+        end
+        if(params[:ResultMessage] != nil)
+          output += "<ResultMessage>" + params[:ResultMessage] + "</ResultMessage>"
+        end
+        if(params[:LastTransactionDate] != nil)
+          output += "<LastTransactionDate>" + params[:LastTransactionDate] + "</LastTransactionDate>"
+        end
+        if(params[:MaskedCCNo] != nil)
+          output += "<MaskedCCNo>" + params[:MaskedCCNo] + "</MaskedCCNo>"
+        end
+        if(params[:CCTokenId] != nil)
+          output += "<CCTokenId>" + params[:CCTokenId] + "</CCTokenId>"
+        end
+        if(params[:ExtraParam] != nil)
+          output += "<ExtraParam>" + params[:ExtraParam] + "</ExtraParam>"
+        end
+        output += "</Response>"
+        puts "XML OUTPUT : " + output
+      
+        @returnData = output
+      else
+        @returnData = "nil"
+      end
+    else
+    end
+  end
+end
 end

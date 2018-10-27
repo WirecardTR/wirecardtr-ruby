@@ -8,6 +8,7 @@ class Marketplacesale3dsecurerequest
     attr_accessor :Token
     attr_accessor :Creditcardinfo
     attr_accessor :MPAY
+    attr_accessor :CurrencyCode
     attr_accessor :ExtraParam
     attr_accessor :Description
     attr_accessor :IPAddress
@@ -52,6 +53,7 @@ class Marketplacesale3dsecurerequest
             <CCTokenId>"+req.Cardtokenization.CCTokenId+"</CCTokenId>
 	    </CardTokenization>
             <MPAY>"+req.MPAY+"</MPAY>
+            <CurrencyCode>"+req.CurrencyCode+"</CurrencyCode>
             <Port>"+req.Port+"</Port>
             <ExtraParam>"+req.ExtraParam+"</ExtraParam>
             <Description>"+req.Description+"</Description>

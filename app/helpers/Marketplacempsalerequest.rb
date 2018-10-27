@@ -9,6 +9,7 @@ class Marketplacempsalerequest
     attr_accessor :Creditcardinfo
     attr_accessor :Price
     attr_accessor :MPAY
+    attr_accessor :CurrencyCode
     attr_accessor :ExtraParam
     attr_accessor :Description
     attr_accessor :IPAddress
@@ -52,6 +53,7 @@ class Marketplacempsalerequest
             <CCTokenId>"+req.Cardtokenization.CCTokenId+"</CCTokenId>
 	    </CardTokenization>
             <MPAY>"+req.MPAY+"</MPAY>
+            <CurrencyCode>"+req.CurrencyCode+"</CurrencyCode>
             <Price>"+req.Price+"</Price>
             <ExtraParam>"+req.ExtraParam+"</ExtraParam>
             <Description>"+req.Description+"</Description>

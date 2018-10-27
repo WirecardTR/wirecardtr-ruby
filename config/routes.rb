@@ -56,6 +56,8 @@ Rails.application.routes.draw do
   post 'home/fail'
   post 'home/tokenizesuccess'
   post 'home/tokenizefail'
+  post 'home/successpost'
+  post 'home/failpost'
 
   
   root 'home#index'

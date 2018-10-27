@@ -9,6 +9,7 @@ class Wdticketsale3durlproxy
     attr_accessor :Token
     attr_accessor :Price
     attr_accessor :MPAY
+    attr_accessor :CurrencyCode
     attr_accessor :ErrorURL
     attr_accessor :SuccessURL
     attr_accessor :ExtraParam
@@ -34,6 +35,7 @@ class Wdticketsale3durlproxy
         </Token>
         <Price>"+req.Price+"</Price>  
         <MPAY>"+req.MPAY+"</MPAY>  
+        <CurrencyCode>"+req.CurrencyCode+"</CurrencyCode>  
         <ErrorURL>"+req.ErrorURL+"</ErrorURL>  
         <SuccessURL>"+req.SuccessURL+"</SuccessURL>  
         <ExtraParam>"+req.ExtraParam+"</ExtraParam> 
