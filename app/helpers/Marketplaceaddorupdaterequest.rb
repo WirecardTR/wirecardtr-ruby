@@ -15,7 +15,9 @@ class Marketplaceaddorupdaterequest
     attr_accessor :Contactinfo
     attr_accessor :Financialinfo
     attr_accessor :SubPartnerId
-
+    attr_accessor :AuthSignatoryName
+    attr_accessor :AuthSignatorySurname
+    attr_accessor :AuthSignatoryBirthDate
     def executeAddSubPartner(req,settings)
         result= Core::HttpClient::post(settings.BaseUrl,self.to_xml_addsubpartner(req));
        if result != nil
@@ -60,7 +62,12 @@ class Marketplaceaddorupdaterequest
             <TaxNumber>"+req.Financialinfo.TaxNumber+"</TaxNumber>
             <BankName>"+req.Financialinfo.BankName+"</BankName>
             <IBAN>"+req.Financialinfo.IBAN+"</IBAN>
-	    </FinancialInfo>
+        </FinancialInfo>
+        <AuthSignatory>
+            <Name>"+req.AuthSignatoryName+"</Name>
+            <Surname>"+req.AuthSignatorySurname+"</Surname>
+            <BirthDate>"+req.AuthSignatoryBirthDate+"</BirthDate>
+	    </AuthSignatory>
         </WIRECARD>"
         p xml_string
         return xml_string
@@ -94,7 +101,12 @@ class Marketplaceaddorupdaterequest
             <TaxNumber>"+req.Financialinfo.TaxNumber+"</TaxNumber>
             <BankName>"+req.Financialinfo.BankName+"</BankName>
             <IBAN>"+req.Financialinfo.IBAN+"</IBAN>
-	    </FinancialInfo>
+        </FinancialInfo>
+        <AuthSignatory>
+            <Name>"+req.AuthSignatoryName+"</Name>
+            <Surname>"+req.AuthSignatorySurname+"</Surname>
+            <BirthDate>"+req.AuthSignatoryBirthDate+"</BirthDate>
+	    </AuthSignatory>
         </WIRECARD>"
         p xml_string
         return xml_string

@@ -442,6 +442,11 @@ end
           req.Financialinfo.TaxNumber = "11111111111"
           req.Financialinfo.BankName = "0012"
           req.Financialinfo.IBAN = "TR330006100519786457841326"
+
+          req.AuthSignatoryName="Ahmet"
+          req.AuthSignatorySurname="Yılmaz"
+          req.AuthSignatoryBirthDate=Time.now.strftime("%Y/%m/%d")
+
           @returnData= req.executeAddSubPartner(req,@@settings) # xml servis çağrısının başladığı kısım
         else
       end
@@ -480,6 +485,11 @@ end
         req.Financialinfo.TaxNumber = "11111111111"
         req.Financialinfo.BankName = "0012"
         req.Financialinfo.IBAN = "TR330006100519786457841326"
+
+        req.AuthSignatoryName="Ahmet"
+        req.AuthSignatorySurname="Yılmaz"
+        req.AuthSignatoryBirthDate=Time.now.strftime("%Y/%m/%d")
+
         @returnData= req.executeUpdateSubPartner(req,@@settings) # xml servis çağrısının başladığı kısım
       else
     end

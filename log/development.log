@@ -18626,3 +18626,85 @@ Started GET "/" for 127.0.0.1 at 2018-08-18 17:01:38 +0300
 SyntaxError (D:/wirecardgithub/wirecardtr-ruby/app/controllers/home_controller.rb:853: syntax error, unexpected end-of-input, expecting keyword_end):
   
 app/controllers/home_controller.rb:853: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-12-14 18:26:44 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 1142ms (Views: 108.3ms)
+
+
+Started GET "/home/marketplaceaddsubpartner" for 127.0.0.1 at 2018-12-14 18:27:07 +0300
+Processing by HomeController#marketplaceaddsubpartner as HTML
+  Rendering home/marketplaceaddsubpartner.erb within layouts/application
+  Rendered home/marketplaceaddsubpartner.erb within layouts/application (1.0ms)
+Completed 200 OK in 86ms (Views: 64.9ms)
+
+
+Started POST "/home/marketplaceaddsubpartner" for 127.0.0.1 at 2018-12-14 18:27:15 +0300
+Processing by HomeController#marketplaceaddsubpartner as HTML
+  Parameters: {"subPartnerType"=>"Individual", "name"=>"", "mobilePhoneNumber"=>"", "emailAddress"=>"", "invoiceMailAddress"=>"", "identityNumber"=>""}
+  Rendering home/marketplaceaddsubpartner.erb within layouts/application
+  Rendered home/marketplaceaddsubpartner.erb within layouts/application (0.0ms)
+Completed 200 OK in 466ms (Views: 70.3ms)
+
+
+Started POST "/home/marketplaceaddsubpartner" for 127.0.0.1 at 2018-12-14 18:27:21 +0300
+Processing by HomeController#marketplaceaddsubpartner as HTML
+  Parameters: {"subPartnerType"=>"Individual", "name"=>"Coşkun Kurtuldu", "mobilePhoneNumber"=>"5438018814", "emailAddress"=>"coskun.kurtuldu@codevist.com", "invoiceMailAddress"=>"coskun.kurtuldu@codevist.com", "identityNumber"=>"50149318900"}
+  Rendering home/marketplaceaddsubpartner.erb within layouts/application
+  Rendered home/marketplaceaddsubpartner.erb within layouts/application (1.0ms)
+Completed 200 OK in 581ms (Views: 57.9ms)
+
+
+Started GET "/home/marketplaceaddsubpartner" for 127.0.0.1 at 2018-12-14 18:28:03 +0300
+Processing by HomeController#marketplaceaddsubpartner as HTML
+  Rendering home/marketplaceaddsubpartner.erb within layouts/application
+  Rendered home/marketplaceaddsubpartner.erb within layouts/application (1.0ms)
+Completed 200 OK in 70ms (Views: 54.2ms)
+
+
+Started GET "/home/marketplaceupdatesubpartner" for 127.0.0.1 at 2018-12-14 18:28:17 +0300
+Processing by HomeController#marketplaceupdatesubpartner as HTML
+  Rendering home/marketplaceupdatesubpartner.erb within layouts/application
+  Rendered home/marketplaceupdatesubpartner.erb within layouts/application (1.0ms)
+Completed 200 OK in 79ms (Views: 58.6ms)
+
+
+Started GET "/home/marketplaceaddsubpartner" for 127.0.0.1 at 2018-12-14 18:33:35 +0300
+Processing by HomeController#marketplaceaddsubpartner as HTML
+  Rendering home/marketplaceaddsubpartner.erb within layouts/application
+  Rendered home/marketplaceaddsubpartner.erb within layouts/application (0.0ms)
+Completed 200 OK in 78ms (Views: 57.5ms)
+
+
+Started POST "/home/marketplaceaddsubpartner" for 127.0.0.1 at 2018-12-14 18:33:41 +0300
+Processing by HomeController#marketplaceaddsubpartner as HTML
+  Parameters: {"subPartnerType"=>"Individual", "name"=>"", "mobilePhoneNumber"=>"", "emailAddress"=>"", "invoiceMailAddress"=>"", "identityNumber"=>""}
+  Rendering home/marketplaceaddsubpartner.erb within layouts/application
+  Rendered home/marketplaceaddsubpartner.erb within layouts/application (1.0ms)
+Completed 200 OK in 252ms (Views: 52.5ms)
+
+
+Started POST "/home/marketplaceaddsubpartner" for 127.0.0.1 at 2018-12-14 18:33:46 +0300
+Processing by HomeController#marketplaceaddsubpartner as HTML
+  Parameters: {"subPartnerType"=>"Individual", "name"=>"Coşkun Kurtuldu", "mobilePhoneNumber"=>"5438018814", "emailAddress"=>"coskun.kurtuldu@codevist.com", "invoiceMailAddress"=>"coskun.kurtuldu@codevist.com", "identityNumber"=>"50149318900"}
+  Rendering home/marketplaceaddsubpartner.erb within layouts/application
+  Rendered home/marketplaceaddsubpartner.erb within layouts/application (1.0ms)
+Completed 200 OK in 208ms (Views: 53.1ms)
+
+
+Started GET "/home/marketplaceupdatesubpartner" for 127.0.0.1 at 2018-12-14 18:33:52 +0300
+Processing by HomeController#marketplaceupdatesubpartner as HTML
+  Rendering home/marketplaceupdatesubpartner.erb within layouts/application
+  Rendered home/marketplaceupdatesubpartner.erb within layouts/application (0.0ms)
+Completed 200 OK in 76ms (Views: 57.5ms)
+
+
+Started POST "/home/marketplaceupdatesubpartner" for 127.0.0.1 at 2018-12-14 18:33:58 +0300
+Processing by HomeController#marketplaceupdatesubpartner as HTML
+  Parameters: {"subPartnerType"=>"Individual", "name"=>"Coşkun Kurtuldu", "mobilePhoneNumber"=>"5438018814", "emailAddress"=>"coskun.kurtuldu@codevist.com", "invoiceMailAddress"=>"coskun.kurtuldu@codevist.com", "identityNumber"=>"50149318900", "subPartnerId"=>"5453"}
+  Rendering home/marketplaceupdatesubpartner.erb within layouts/application
+  Rendered home/marketplaceupdatesubpartner.erb within layouts/application (0.0ms)
+Completed 200 OK in 289ms (Views: 63.6ms)
+
+
