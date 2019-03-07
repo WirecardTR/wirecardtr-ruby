@@ -451,7 +451,48 @@ end
         else
       end
     end
+    def marketplaceaddsubpartnerOnlineVerify
+      if request.post?
+        req= Marketplaceaddorupdaterequest.new   
+        req.ServiceType = "CCMarketPlace"
+        req.OperationType = "AddSubPartner"
+        req.SubPartnerType=params[:subPartnerType]  
+        req.UniqueId = SecureRandom.uuid
+        req.Name = params[:name];
+        req.BranchName = params[:name];
+        #region Token
+        req.Token = Token.new
+        req.Token.UserCode=@@settings.UserCode
+        req.Token.Pin=@@settings.Pin 
+        #end Region
+        #region Contactinfo Bilgileri
+        req.Contactinfo= Contactinfo.new
+        req.Contactinfo.Country = "TR"
+        req.Contactinfo.City = "34"
+        req.Contactinfo.Address = "Gayrettepe Mh. Yıldız Posta Cd. D Plaza No:52 K:6 34349 Beşiktaş / İstanbul"
+        req.Contactinfo.MobilePhone =params[:mobilePhoneNumber] 
+        req.Contactinfo.BusinessPhone = "2121111111"
+        req.Contactinfo.Email = params[:emailAddress] 
+        req.Contactinfo.InvoiceEmail  =params[:invoiceMailAddress] 
+        #endregion
+        #region Financialinfo Bilgileri
+        req.Financialinfo = Financialinfo.new
+        req.Financialinfo.IdentityNumber =params[:identityNumber]  
+        req.Financialinfo.TaxOffice = "İstanbul"
+        req.Financialinfo.TaxNumber = "11111111111"
+        req.Financialinfo.BankName = "0012"
+        req.Financialinfo.IBAN = "TR330006100519786457841326"
+        req.Financialinfo.TradeRegisterNumber = "963018"
+        req.Financialinfo.TradeChamber = "İTO"
 
+        req.AuthSignatoryName="Ahmet"
+        req.AuthSignatorySurname="Yılmaz"
+        req.AuthSignatoryBirthDate=Time.now.strftime("%Y/%m/%d")
+
+        @returnData= req.executeAddSubPartnerOnline(req,@@settings) # xml servis çağrısının başladığı kısım
+      else
+    end
+  end
     #MarketPlaceUpdateSubPartner Action'ı temsil etmektedir.
     def marketplaceupdatesubpartner
       if request.post?
@@ -494,7 +535,50 @@ end
       else
     end
     end
+#MarketPlaceUpdateSubPartner Action'ı temsil etmektedir.
+def marketplaceupdatesubpartnerOnlineVerify
+  if request.post?
+    req= Marketplaceaddorupdaterequest.new   
+    req.ServiceType = "CCMarketPlace"
+    req.OperationType = "UpdateSubPartner"
+    req.UniqueId = SecureRandom.uuid
+    req.Name = params[:name];
+    req.BranchName = params[:name];
+    req.SubPartnerType=params[:subPartnerType]  
+    req.SubPartnerId = params[:subPartnerId];
+    #region Token
+    req.Token = Token.new
+    req.Token.UserCode=@@settings.UserCode
+    req.Token.Pin=@@settings.Pin 
+    #end Region
+    #region Contactinfo Bilgileri
+    req.Contactinfo= Contactinfo.new
+    req.Contactinfo.Country = "TR"
+    req.Contactinfo.City = "34"
+    req.Contactinfo.Address = "Gayrettepe Mh. Yıldız Posta Cd. D Plaza No:52 K:6 34349 Beşiktaş / İstanbul"
+    req.Contactinfo.MobilePhone =params[:mobilePhoneNumber] 
+    req.Contactinfo.BusinessPhone = "2121111111"
+    req.Contactinfo.Email = params[:emailAddress] 
+    req.Contactinfo.InvoiceEmail  =params[:invoiceMailAddress] 
+    #endregion
+    #region Financialinfo Bilgileri
+    req.Financialinfo = Financialinfo.new
+    req.Financialinfo.IdentityNumber =params[:identityNumber]  
+    req.Financialinfo.TaxOffice = "İstanbul"
+    req.Financialinfo.TaxNumber = "11111111111"
+    req.Financialinfo.BankName = "0012"
+    req.Financialinfo.IBAN = "TR330006100519786457841326"
+    req.Financialinfo.TradeRegisterNumber = "963018"
+    req.Financialinfo.TradeChamber = "İTO"
 
+    req.AuthSignatoryName="Ahmet"
+    req.AuthSignatorySurname="Yılmaz"
+    req.AuthSignatoryBirthDate=Time.now.strftime("%Y/%m/%d")
+
+    @returnData= req.executeUpdateSubPartnerOnline(req,@@settings) # xml servis çağrısının başladığı kısım
+  else
+end
+end
     #market place deactive Action'ı temsil etmektedir.
     def marketplacedeactivesubpartner
       if request.post?

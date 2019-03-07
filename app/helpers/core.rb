@@ -14,7 +14,6 @@ class Helper
       formatter.write(xml, output);
       return output
     end
-
 end
 
 class HttpClient
@@ -25,8 +24,8 @@ class HttpClient
         puts "---IN HTTP POST---"
         puts "URL: " + url
         puts "REQUEST\n"
-        puts content
-          response = RestClient.post(url, content)
+        puts 
+          response = RestClient.post(url, content) 
         if response == nil
           puts "RESPONSE IS NIL";
         else

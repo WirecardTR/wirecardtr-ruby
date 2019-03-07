@@ -66,8 +66,10 @@
             <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false">Mağaza Servisleri</a>
             <ul class="collapse list-unstyled" id="pageSubmenu3">
 
-                <li> <%= link_to 'Mağaza Oluştur', controller: 'home', action: 'marketplaceaddsubpartner' %></li>
-                <li> <%= link_to 'Mağaza Güncelle', controller: 'home', action: 'marketplaceupdatesubpartner' %></li>
+                <li> <%= link_to 'Mağaza Oluştur (Belge İle Doğrulama)', controller: 'home', action: 'marketplaceaddsubpartner' %></li>
+                <li> <%= link_to 'Mağaza Güncelle (Belge İle Doğrulama)', controller: 'home', action: 'marketplaceupdatesubpartner' %></li>
+                <li> <%= link_to 'Mağaza Oluştur (Online Doğrulama)', controller: 'home', action: 'marketplaceaddsubpartnerOnlineVerify' %></li>
+                <li> <%= link_to 'Mağaza Güncelle (Online Doğrulama)', controller: 'home', action: 'marketplaceupdatesubpartnerOnlineVerify' %></li>
                 <li> <%= link_to 'Mağaza Sil', controller: 'home', action: 'marketplacedeactivesubpartner' %></li>
                 <li> <%= link_to '3D Secure ile Ödeme ', controller: 'home', action: 'marketplacesale3dsec' %></li>
                 <li> <%= link_to '3D Secure olmadan Ödeme', controller: 'home', action: 'marketplacempsale' %></li>
