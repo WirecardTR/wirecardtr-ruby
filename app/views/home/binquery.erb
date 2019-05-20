@@ -1,0 +1,48 @@
+<h2>BIN Sorgulama</h2>
+
+
+<fieldset>
+    <legend><label style="font-weight:bold;width:250px;">BIN Sorgulama Bilgileri</label></legend>
+    <label style="font-weight:bold;">Servis Adı &nbsp; :   &nbsp; </label> MerchantQueries<br>
+    <label style="font-weight:bold;">Operasyon Adı &nbsp; :&nbsp; </label> BinQueryOperation <br>
+    <label style="font-weight:bold;">UserCode  &nbsp;:  &nbsp;</label> Wirecard tarafından verilen değer <br>
+    <label style="font-weight:bold;">Pin &nbsp;:  &nbsp;</label> Wirecard tarafından verilen değer <br>
+    <label style="font-weight:bold;">BIN &nbsp;:&nbsp;  </label> Kredi kartı numaranızın ilk 6 hanesi <br>
+
+
+</fieldset>
+
+<br />
+<form action="" method="post" class="form-horizontal">
+    <fieldset>
+        <!-- Form Name -->
+        <legend><label style="font-weight:bold;width:250px;">BIN Sorgulama Detayları</label></legend>
+
+        <!-- Text input-->
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="">Kredi kartı numaranızın ilk 6 hanesi</label>
+            <div class="col-md-4">
+                <input name="bin" class="form-control input-md">
+            </div>
+        </div>
+
+    </fieldset>
+
+
+    <!-- Button -->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for=""></label>
+        <div class="col-md-4">
+            <button type="submit" id="" name="" class="btn btn-success">BIN Sorgula</button>
+        </div>
+    </div>
+</form>
+<pre>
+ <%= if @returnData
+   @returnData 
+   else
+  "nil"
+  end
+  %>
+</pre>

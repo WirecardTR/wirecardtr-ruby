@@ -19613,3 +19613,227 @@ Processing by HomeController#ccproxysaleform as HTML
 Completed 200 OK in 287ms (Views: 38.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-04-27 18:37:27 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 1037ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"binquery", :controller=>"home"}):
+    92:         <ul class="collapse list-unstyled" id="pageSubmenu5">
+    93:         <li> <%= link_to 'Sipariş Numarası ile İşlem Sorgulama', controller: 'home', action: 'transactionrequestorder' %></li>
+    94:         <li> <%= link_to 'MPAY ile İşlem Sorgulama', controller: 'home', action: 'transactionrequestbympay' %></li>
+    95:         <li> <%= link_to 'BIN Sorgulama', controller: 'home', action: 'binquery' %></li>
+    96:         
+    97:     
+    98: 
+  
+app/views/layouts/application.html.erb:95:in `_app_views_layouts_application_html_erb___800749900_95384680'
+Started GET "/" for 127.0.0.1 at 2019-04-27 18:39:16 +0300
+Processing by HomeController#index as HTML
+Started POST "/__web_console/repl_sessions/2ccc9a711acec540b34ceadd0b35604b/trace" for 127.0.0.1 at 2019-04-27 18:39:16 +0300
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 134ms (Views: 104.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-27 18:39:30 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 42ms (Views: 31.4ms)
+
+
+Started GET "/home/transactionrequestbympay" for 127.0.0.1 at 2019-04-27 18:39:34 +0300
+Processing by HomeController#transactionrequestbympay as HTML
+  Rendering home/transactionrequestbympay.erb within layouts/application
+  Rendered home/transactionrequestbympay.erb within layouts/application (0.5ms)
+Completed 200 OK in 93ms (Views: 37.2ms)
+
+
+Started GET "/home/transactionrequestbympay" for 127.0.0.1 at 2019-04-27 18:41:00 +0300
+Processing by HomeController#transactionrequestbympay as HTML
+  Rendering home/transactionrequestbympay.erb within layouts/application
+  Rendered home/transactionrequestbympay.erb within layouts/application (1.0ms)
+Completed 200 OK in 50ms (Views: 39.3ms)
+
+
+Started GET "/home/binquery" for 127.0.0.1 at 2019-04-27 18:41:07 +0300
+Processing by HomeController#binquery as HTML
+  Rendering home/binquery.erb within layouts/application
+  Rendered home/binquery.erb within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 34.9ms)
+
+
+Started POST "/home/binquery" for 127.0.0.1 at 2019-04-27 18:41:10 +0300
+Processing by HomeController#binquery as HTML
+  Parameters: {"bin"=>""}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NameError (uninitialized constant HomeController::BinQueryRequest):
+  
+app/controllers/home_controller.rb:457:in `binquery'
+Started GET "/" for 127.0.0.1 at 2019-04-27 18:45:22 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 283ms (Views: 33.4ms)
+
+
+Started GET "/home/binquery" for 127.0.0.1 at 2019-04-27 18:45:43 +0300
+Processing by HomeController#binquery as HTML
+  Rendering home/binquery.erb within layouts/application
+  Rendered home/binquery.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 31.1ms)
+
+
+Started POST "/home/binquery" for 127.0.0.1 at 2019-04-27 18:45:45 +0300
+Processing by HomeController#binquery as HTML
+  Parameters: {"bin"=>"123456"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NameError (uninitialized constant HomeController::BinQueryRequest):
+  
+app/controllers/home_controller.rb:457:in `binquery'
+Started POST "/__web_console/repl_sessions/8a6eddb63e331b3faa2c9769c3c89a8d/trace" for 127.0.0.1 at 2019-04-27 18:45:52 +0300
+Started POST "/__web_console/repl_sessions/8a6eddb63e331b3faa2c9769c3c89a8d/trace" for 127.0.0.1 at 2019-04-27 18:45:54 +0300
+Started POST "/__web_console/repl_sessions/8a6eddb63e331b3faa2c9769c3c89a8d/trace" for 127.0.0.1 at 2019-04-27 18:45:54 +0300
+Started POST "/__web_console/repl_sessions/8a6eddb63e331b3faa2c9769c3c89a8d/trace" for 127.0.0.1 at 2019-04-27 18:45:55 +0300
+Started POST "/__web_console/repl_sessions/8a6eddb63e331b3faa2c9769c3c89a8d/trace" for 127.0.0.1 at 2019-04-27 18:45:55 +0300
+Started POST "/__web_console/repl_sessions/8a6eddb63e331b3faa2c9769c3c89a8d/trace" for 127.0.0.1 at 2019-04-27 18:45:55 +0300
+Started POST "/__web_console/repl_sessions/8a6eddb63e331b3faa2c9769c3c89a8d/trace" for 127.0.0.1 at 2019-04-27 18:45:58 +0300
+Started POST "/__web_console/repl_sessions/8a6eddb63e331b3faa2c9769c3c89a8d/trace" for 127.0.0.1 at 2019-04-27 18:45:58 +0300
+Started POST "/__web_console/repl_sessions/8a6eddb63e331b3faa2c9769c3c89a8d/trace" for 127.0.0.1 at 2019-04-27 18:45:59 +0300
+Started POST "/__web_console/repl_sessions/8a6eddb63e331b3faa2c9769c3c89a8d/trace" for 127.0.0.1 at 2019-04-27 18:45:59 +0300
+Started GET "/" for 127.0.0.1 at 2019-04-27 18:50:18 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 343ms (Views: 41.6ms)
+
+
+Started GET "/home/binquery" for 127.0.0.1 at 2019-04-27 18:50:44 +0300
+Processing by HomeController#binquery as HTML
+  Rendering home/binquery.erb within layouts/application
+  Rendered home/binquery.erb within layouts/application (1.0ms)
+Completed 200 OK in 57ms (Views: 43.2ms)
+
+
+Started POST "/home/binquery" for 127.0.0.1 at 2019-04-27 18:50:45 +0300
+Processing by HomeController#binquery as HTML
+  Parameters: {"bin"=>""}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NameError (uninitialized constant HomeController::BinQueryRequest):
+  
+app/controllers/home_controller.rb:457:in `binquery'
+Started GET "/home/binquery" for 127.0.0.1 at 2019-04-27 18:53:18 +0300
+Processing by HomeController#binquery as HTML
+  Rendering home/binquery.erb within layouts/application
+  Rendered home/binquery.erb within layouts/application (3.0ms)
+Completed 200 OK in 324ms (Views: 37.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-18 14:18:12 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 1013ms (Views: 140.2ms)
+
+
+Started GET "/home/marketplacecreatesubpartner" for 127.0.0.1 at 2019-05-18 14:18:30 +0300
+Processing by HomeController#marketplacecreatesubpartner as HTML
+  Rendering home/marketplacecreatesubpartner.erb within layouts/application
+  Rendered home/marketplacecreatesubpartner.erb within layouts/application (1.0ms)
+Completed 200 OK in 47ms (Views: 30.9ms)
+
+
+Started POST "/home/marketplacecreatesubpartner" for 127.0.0.1 at 2019-05-18 14:18:32 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/home/marketplacecreatesubpartner"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/gen204?invalidResponse=q=https%3A%2F%2Ftranslate.googleapis.com%2Ftranslate_a%2Fsingle%3Fclient%3Dgtx%26s,ql=158,r=,rl=0" for 127.0.0.1 at 2019-05-18 17:30:26 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/gen204"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home/marketplacecreatesubpartner" for 127.0.0.1 at 2019-05-18 17:39:50 +0300
+Processing by HomeController#marketplacecreatesubpartner as HTML
+  Rendering home/marketplacecreatesubpartner.erb within layouts/application
+  Rendered home/marketplacecreatesubpartner.erb within layouts/application (1.3ms)
+Completed 200 OK in 105ms (Views: 80.6ms)
+
+
+Started POST "/home/marketplacecreatesubpartner" for 127.0.0.1 at 2019-05-18 17:39:53 +0300
+Processing by HomeController#marketplacecreatesubpartner as HTML
+  Parameters: {"subPartnerType"=>"Individual"}
+Completed 500 Internal Server Error in 60ms
+
+
+  
+NoMethodError (undefined method `UserCode' for nil:NilClass):
+  
+app/helpers/marketplacecreaterequest.rb:31:in `to_xml_createsubpartner'
+app/helpers/marketplacecreaterequest.rb:16:in `executeCreateSubPartner'
+app/controllers/home_controller.rb:464:in `marketplacecreatesubpartner'

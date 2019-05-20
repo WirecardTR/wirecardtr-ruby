@@ -451,6 +451,46 @@ end
         else
       end
     end
+
+    def marketplacecreatesubpartner
+      if request.post?
+        req= Marketplacecreaterequest.new   
+        req.ServiceType = "WDTicket"
+        req.OperationType = "CreateSPRegistrationURL"
+        req.SubPartnerType=params[:subPartnerType]  
+        req.UniqueId = "5000"
+        #region Token
+        req.Token = Token.new
+        req.Token.UserCode=@@settings.UserCode
+        req.Token.Pin=@@settings.Pin 
+        #end Region
+
+        @returnData= req.executeCreateSubPartner(req,@@settings) # xml servis çağrısının başladığı kısım
+      else
+    end
+  end
+
+
+    def binquery
+      if request.post?
+        req= Marketplaceaddorupdaterequest.new   
+        req.ServiceType = "MerchantQueries"
+        req.OperationType = "BinQueryOperation"
+        req.SubPartnerType=params[:subPartnerType]  
+        req.BIN = params[:bin]
+        
+        #region Token
+        req.Token = Token.new
+        req.Token.UserCode=@@settings.UserCode
+        req.Token.Pin=@@settings.Pin 
+        #end Region
+       
+
+        @returnData= req.executeBinQuery(req,@@settings) # xml servis çağrısının başladığı kısım
+      else
+    end
+  end
+
     def marketplaceaddsubpartnerOnlineVerify
       if request.post?
         req= Marketplaceaddorupdaterequest.new   

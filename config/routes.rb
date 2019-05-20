@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   get 'home/wdticketsaleurlproxy'
   get 'home/marketplacewdticketmpsale'
   get 'home/marketplaceaddsubpartner'
+  get 'home/marketplacecreatesubpartner'  
+  get 'home/binquery'
   get 'home/marketplaceupdatesubpartner'
   get 'home/marketplaceaddsubpartnerOnlineVerify'
   get 'home/marketplaceupdatesubpartnerOnlineVerify'
@@ -51,7 +53,8 @@ Rails.application.routes.draw do
   post 'home/marketplacewdticketmpsale'
   post 'home/marketplacereleasepayment'
   post 'home/informationsmsservice'
-
+  post 'home/binquery'
+  post 'home/marketplacecreatesubpartner'  
   post 'home/transactionrequestorder'
   post 'home/transactionrequestbympay'
   post 'home/tokenizeccurl'
