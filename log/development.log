@@ -19837,3 +19837,22 @@ NoMethodError (undefined method `UserCode' for nil:NilClass):
 app/helpers/marketplacecreaterequest.rb:31:in `to_xml_createsubpartner'
 app/helpers/marketplacecreaterequest.rb:16:in `executeCreateSubPartner'
 app/controllers/home_controller.rb:464:in `marketplacecreatesubpartner'
+Started GET "/home/marketplacecreatesubpartner" for 127.0.0.1 at 2019-05-18 17:44:03 +0300
+Processing by HomeController#marketplacecreatesubpartner as HTML
+  Rendering home/marketplacecreatesubpartner.erb within layouts/application
+  Rendered home/marketplacecreatesubpartner.erb within layouts/application (0.9ms)
+Completed 200 OK in 49ms (Views: 37.3ms)
+
+
+Started POST "/home/marketplacecreatesubpartner" for 127.0.0.1 at 2019-05-18 17:44:17 +0300
+Processing by HomeController#marketplacecreatesubpartner as HTML
+  Parameters: {"subPartnerType"=>"Individual"}
+Completed 500 Internal Server Error in 92ms
+
+
+  
+SocketError (Failed to open TCP connection to www.wirecard.com.tr:443 (getaddrinfo: No such host is known. )):
+  
+app/helpers/core.rb:28:in `post'
+app/helpers/marketplacecreaterequest.rb:16:in `executeCreateSubPartner'
+app/controllers/home_controller.rb:468:in `marketplacecreatesubpartner'

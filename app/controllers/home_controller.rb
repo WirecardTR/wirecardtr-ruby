@@ -500,6 +500,8 @@ end
         req.UniqueId = SecureRandom.uuid
         req.Name = params[:name];
         req.BranchName = params[:name];
+        req.SuccessURL = "https://www.test.com/Success";
+        req.ErrorURL = "https://www.test.com/Error";
         #region Token
         req.Token = Token.new
         req.Token.UserCode=@@settings.UserCode

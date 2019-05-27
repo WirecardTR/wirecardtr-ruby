@@ -104,6 +104,8 @@ class Marketplaceaddorupdaterequest
         <SubPartnerType>"+req.SubPartnerType+"</SubPartnerType>
         <Name>"+req.Name+"</Name>
         <BranchName>"+req.BranchName+"</BranchName>
+        <SuccessURL>"+req.SuccessURL+"</SuccessURL>
+        <ErrorURL>"+req.ErrorURL+"</ErrorURL>
         <ContactInfo>
             <Country>"+req.Contactinfo.Country+"</Country>
             <City>"+req.Contactinfo.City+"</City>
