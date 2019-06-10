@@ -17,7 +17,8 @@ class Ccproxysalerequest
     attr_accessor :ExtraParam
     attr_accessor :Port
     attr_accessor :Cardtokenization
-
+    attr_accessor :CustomerInfo    
+    attr_accessor :Language  
     def execute(req,settings)
         result= Core::HttpClient::post(settings.BaseUrl,self.to_xml(req));
        if result != nil
@@ -49,6 +50,12 @@ class Ccproxysalerequest
             <ValidityPeriod>"+req.Cardtokenization.ValidityPeriod+"</ValidityPeriod>
             <CCTokenId>"+req.Cardtokenization.CCTokenId+"</CCTokenId>
         </CardTokenization>
+        <CustomerInfo>
+            <CustomerName>"+req.CustomerInfo.CustomerName+"</CustomerName>
+            <CustomerSurname>"+req.CustomerInfo.CustomerSurname+"</CustomerSurname>
+            <CustomerEmail>"+req.CustomerInfo.CustomerEmail+"</CustomerEmail>
+        </CustomerInfo>
+            <Language>"+req.Language+"</Language>
             <MPAY>"+req.MPAY+"</MPAY> 
             <CurrencyCode>"+req.CurrencyCode+"</CurrencyCode> 
             <Port>"+req.Port+"</Port>  

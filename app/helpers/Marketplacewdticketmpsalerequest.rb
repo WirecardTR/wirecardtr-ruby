@@ -16,7 +16,8 @@ class Marketplacewdticketmpsalerequest
     attr_accessor :CommissionRate
     attr_accessor :SubPartnerId
     attr_accessor :PaymentContent
-    
+    attr_accessor :CustomerInfo    
+    attr_accessor :Language 
     def execute(req,settings)
         result= Core::HttpClient::post(settings.BaseUrl,self.to_xml(req));
        if result != nil
@@ -34,7 +35,12 @@ class Marketplacewdticketmpsalerequest
             <UserCode>"+req.Token.UserCode+"</UserCode>
             <Pin>"+req.Token.Pin+"</Pin>
         </Token>
-   
+        <CustomerInfo>
+        <CustomerName>"+req.CustomerInfo.CustomerName+"</CustomerName>
+        <CustomerSurname>"+req.CustomerInfo.CustomerSurname+"</CustomerSurname>
+        <CustomerEmail>"+req.CustomerInfo.CustomerEmail+"</CustomerEmail>
+    </CustomerInfo>
+        <Language>"+req.Language+"</Language>
             <MPAY>"+req.MPAY+"</MPAY>
             <CurrencyCode>"+req.CurrencyCode+"</CurrencyCode>
             <ExtraParam>"+req.ExtraParam+"</ExtraParam>

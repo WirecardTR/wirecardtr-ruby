@@ -20,7 +20,8 @@ class Marketplacesale3dsecurerequest
     attr_accessor :SubPartnerId
     attr_accessor :PaymentContent
     attr_accessor :Cardtokenization
-    
+    attr_accessor :CustomerInfo    
+    attr_accessor :Language 
     def execute(req,settings)
         result= Core::HttpClient::post(settings.BaseUrl,self.to_xml(req));
        if result != nil
@@ -51,7 +52,13 @@ class Marketplacesale3dsecurerequest
             <CustomerId>"+req.Cardtokenization.CustomerId+"</CustomerId>
             <ValidityPeriod>"+req.Cardtokenization.ValidityPeriod+"</ValidityPeriod>
             <CCTokenId>"+req.Cardtokenization.CCTokenId+"</CCTokenId>
-	    </CardTokenization>
+        </CardTokenization>
+        <CustomerInfo>
+            <CustomerName>"+req.CustomerInfo.CustomerName+"</CustomerName>
+            <CustomerSurname>"+req.CustomerInfo.CustomerSurname+"</CustomerSurname>
+            <CustomerEmail>"+req.CustomerInfo.CustomerEmail+"</CustomerEmail>
+        </CustomerInfo>
+            <Language>"+req.Language+"</Language>
             <MPAY>"+req.MPAY+"</MPAY>
             <CurrencyCode>"+req.CurrencyCode+"</CurrencyCode>
             <Port>"+req.Port+"</Port>

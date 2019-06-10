@@ -19,6 +19,8 @@ class Ccproxysale3dequest
     attr_accessor :ErrorURL
     attr_accessor :SuccessURL
     attr_accessor :Cardtokenization
+    attr_accessor :CustomerInfo    
+    attr_accessor :Language    
 
     def execute(req,settings)
         result= Core::HttpClient::post(settings.BaseUrl,self.to_xml(req));
@@ -51,7 +53,13 @@ class Ccproxysale3dequest
             <ValidityPeriod>"+req.Cardtokenization.ValidityPeriod+"</ValidityPeriod>
             <CCTokenId>"+req.Cardtokenization.CCTokenId+"</CCTokenId>
         </CardTokenization>
-            <MPAY>"+req.MPAY+"</MPAY>  
+        <CustomerInfo>
+            <CustomerName>"+req.CustomerInfo.CustomerName+"</CustomerName>
+            <CustomerSurname>"+req.CustomerInfo.CustomerSurname+"</CustomerSurname>
+            <CustomerEmail>"+req.CustomerInfo.CustomerEmail+"</CustomerEmail>
+        </CustomerInfo>
+            <Language>"+req.Language+"</Language>  
+            <MPAY>"+req.MPAY+"</MPAY>              
             <CurrencyCode>"+req.CurrencyCode+"</CurrencyCode>  
             <Port>"+req.Port+"</Port> 
             <ErrorURL>"+req.ErrorURL+"</ErrorURL>

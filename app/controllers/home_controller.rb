@@ -309,6 +309,14 @@ end
          req.Cardtokenization.CCTokenId =""
          
          #endregion 
+         #region CustomerInfo
+         req.CustomerInfo = CustomerInfo.new
+         req.CustomerInfo.CustomerName ="ahmet"
+         req.CustomerInfo.CustomerSurname ="yılmaz"
+         req.CustomerInfo.CustomerEmail ="ahmet.yilmaz@gmail.com"
+         req.Language ="TR"
+         
+         #endregion 
         @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
       
       else
@@ -352,6 +360,14 @@ end
          req.Cardtokenization.CCTokenId =""
          
          #endregion 
+                  #region CustomerInfo
+                  req.CustomerInfo = CustomerInfo.new
+                  req.CustomerInfo.CustomerName ="ahmet"
+                  req.CustomerInfo.CustomerSurname ="yılmaz"
+                  req.CustomerInfo.CustomerEmail ="ahmet.yilmaz@gmail.com"
+                  req.Language ="TR"
+                  
+                  #endregion 
         @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
       
       else
@@ -376,6 +392,14 @@ end
          req.Token.UserCode = @@settings.UserCode
          req.Token.Pin = @@settings.Pin 
          #endregion
+                  #region CustomerInfo
+                  req.CustomerInfo = CustomerInfo.new
+                  req.CustomerInfo.CustomerName ="ahmet"
+                  req.CustomerInfo.CustomerSurname ="yılmaz"
+                  req.CustomerInfo.CustomerEmail ="ahmet.yilmaz@gmail.com"
+                  req.Language ="TR"
+                  
+                  #endregion 
          @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
          #p @returnData
          @url= OpenStruct.new(OpenStruct.new(Hash.from_xml(@returnData) ).Result).Item[3]["Value"]
@@ -403,6 +427,14 @@ end
          req.Token.UserCode = @@settings.UserCode
          req.Token.Pin = @@settings.Pin 
          #endregion
+                  #region CustomerInfo
+                  req.CustomerInfo = CustomerInfo.new
+                  req.CustomerInfo.CustomerName ="ahmet"
+                  req.CustomerInfo.CustomerSurname ="yılmaz"
+                  req.CustomerInfo.CustomerEmail ="ahmet.yilmaz@gmail.com"
+                  req.Language ="TR"
+                  
+                  #endregion 
          @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
          @url= OpenStruct.new(OpenStruct.new(Hash.from_xml(@returnData) ).Result).Item[3]["Value"]
 
@@ -681,6 +713,14 @@ end
          req.Cardtokenization.CCTokenId =""
          
          #endregion
+                  #region CustomerInfo
+                  req.CustomerInfo = CustomerInfo.new
+                  req.CustomerInfo.CustomerName ="ahmet"
+                  req.CustomerInfo.CustomerSurname ="yılmaz"
+                  req.CustomerInfo.CustomerEmail ="ahmet.yilmaz@gmail.com"
+                  req.Language ="TR"
+                  
+                  #endregion 
         @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
       else
       end
@@ -726,7 +766,14 @@ end
         req.Cardtokenization.CCTokenId =""
         
         #endregion 
-
+         #region CustomerInfo
+         req.CustomerInfo = CustomerInfo.new
+         req.CustomerInfo.CustomerName ="ahmet"
+         req.CustomerInfo.CustomerSurname ="yılmaz"
+         req.CustomerInfo.CustomerEmail ="ahmet.yilmaz@gmail.com"
+         req.Language ="TR"
+         
+         #endregion 
         @returnData= req.execute(req,@@settings) # xml servis çağrısının başladığı kısım
         p @returnData
       else
