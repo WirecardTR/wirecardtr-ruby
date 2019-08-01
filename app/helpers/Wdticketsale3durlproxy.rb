@@ -47,7 +47,8 @@ class Wdticketsale3durlproxy
         <SuccessURL>"+req.SuccessURL+"</SuccessURL>  
         <ExtraParam>"+req.ExtraParam+"</ExtraParam> 
         <Description>"+req.Description+"</Description>
-        <PaymentContent>"+req.PaymentContent+"</PaymentContent>       
+        <PaymentContent>"+req.PaymentContent+"</PaymentContent>
+        <InstallmentOptions>"+req.InstallmentOptions+"</InstallmentOptions>                      
         </WIRECARD>"
         p xml_string
         return xml_string

@@ -387,6 +387,8 @@ end
         req.ExtraParam = "";
         req.PaymentContent = "Bilgisayar";
         req.Description = "BLGSYR01";
+        req.InstallmentOptions = "0";
+        
          #region Token
          req.Token = Token.new
          req.Token.UserCode = @@settings.UserCode
@@ -422,6 +424,8 @@ end
         req.ExtraParam = "";
         req.PaymentContent = "Bilgisayar";
         req.Description = "BLGSYR01";
+        req.InstallmentOptions = "0";
+
          #region Token
          req.Token = Token.new
          req.Token.UserCode = @@settings.UserCode
