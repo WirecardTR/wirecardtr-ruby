@@ -787,6 +787,16 @@ end
     def marketplacewdticketmpsale
       if request.post?
         req= Marketplacewdticketmpsalerequest.new
+
+      #region CustomerInfo
+      req.Customerinfo = Customerinfo.new
+      req.Customerinfo.CustomerName ="ahmet"
+      req.Customerinfo.CustomerSurname ="yılmaz"
+      req.Customerinfo.CustomerEmail ="ahmet.yilmaz@gmail.com"
+      req.Language ="TR"
+      
+      #endregion 
+
         req.ServiceType = "WDTicket"
         req.OperationType = "MPSale3DSECWithUrl"
         req.Price = "1";#0,01 TL
@@ -799,6 +809,15 @@ end
         req.SubPartnerId = params[:subPartnerId]
         req.ErrorURL = "http://localhost:3000/home/failpost"
         req.SuccessURL = "http://localhost:3000/home/successpost"
+        req.InstallmentOptions = 3
+        #region CommissionRateList
+        req.Commissionratelist = Commissionratelist.new
+        req.Commissionratelist.Inst0 = 110
+        req.Commissionratelist.Inst3 = 130
+        req.Commissionratelist.Inst6 = 160
+        req.Commissionratelist.Inst9 = 190
+        #endregion
+        
         #region Token
         req.Token = Token.new
         req.Token.UserCode = @@settings.UserCode

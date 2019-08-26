@@ -16,8 +16,10 @@ class Marketplacewdticketmpsalerequest
     attr_accessor :CommissionRate
     attr_accessor :SubPartnerId
     attr_accessor :PaymentContent
-    attr_accessor :CustomerInfo    
+    attr_accessor :Customerinfo    
     attr_accessor :Language 
+    attr_accessor :Commissionratelist
+    attr_accessor :InstallmentOptions
     def execute(req,settings)
         result= Core::HttpClient::post(settings.BaseUrl,self.to_xml(req));
        if result != nil
@@ -36,10 +38,16 @@ class Marketplacewdticketmpsalerequest
             <Pin>"+req.Token.Pin+"</Pin>
         </Token>
         <CustomerInfo>
-        <CustomerName>"+req.CustomerInfo.CustomerName+"</CustomerName>
-        <CustomerSurname>"+req.CustomerInfo.CustomerSurname+"</CustomerSurname>
-        <CustomerEmail>"+req.CustomerInfo.CustomerEmail+"</CustomerEmail>
+        <CustomerName>"+req.Customerinfo.CustomerName+"</CustomerName>
+        <CustomerSurname>"+req.Customerinfo.CustomerSurname+"</CustomerSurname>
+        <CustomerEmail>"+req.Customerinfo.CustomerEmail+"</CustomerEmail>
     </CustomerInfo>
+    <CommissionRateList>
+            <Inst0>"+req.Commissionratelist.Inst0.to_s+"</Inst0>
+            <Inst3>"+req.Commissionratelist.Inst3.to_s+"</Inst3>
+            <Inst6>"+req.Commissionratelist.Inst6.to_s+"</Inst6>
+            <Inst9>"+req.Commissionratelist.Inst9.to_s+"</Inst9>
+        </CommissionRateList>
         <Language>"+req.Language+"</Language>
             <MPAY>"+req.MPAY+"</MPAY>
             <CurrencyCode>"+req.CurrencyCode+"</CurrencyCode>
@@ -51,6 +59,8 @@ class Marketplacewdticketmpsalerequest
             <Price>"+req.Price+"</Price>
             <SubPartnerId>"+req.SubPartnerId+"</SubPartnerId>
             <PaymentContent>"+req.PaymentContent+"</PaymentContent>
+            <InstallmentOptions>"+req.InstallmentOptions.to_s+"</InstallmentOptions>
+            
         </WIRECARD>"
         p xml_string
         return xml_string
